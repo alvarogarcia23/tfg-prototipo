@@ -1,0 +1,7 @@
+data/processed_p.*
+boundaries.sql
+config.conf
+osm-*.map
+osm-*.log
+*.mk
+!docker.mk
