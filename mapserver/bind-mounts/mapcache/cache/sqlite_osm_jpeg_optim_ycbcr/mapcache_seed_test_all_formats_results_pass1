@@ -1,0 +1,695 @@
+START seed JPEG_100_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x30 y15
+seeded 8325 tiles (0 skipped), now at z5 x0 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2448.3 tiles/sec (2448.3 non-empty tiles/sec)
+START seed JPEG_99_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z5 x15 y30
+seeded 8100 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2423.5 tiles/sec (2423.5 non-empty tiles/sec)
+START seed JPEG_98_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y15
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2420.8 tiles/sec (2420.8 non-empty tiles/sec)
+START seed JPEG_97_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2436.6 tiles/sec (2436.6 non-empty tiles/sec)
+START seed JPEG_96_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2925 tiles (0 skipped), now at z6 x15 y0
+seeded 5400 tiles (0 skipped), now at z6 x45 y30
+seeded 8775 tiles (0 skipped), now at z6 x60 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2695.5 tiles/sec (2695.5 non-empty tiles/sec)
+START seed JPEG_95_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z5 x15 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y15
+seeded 8325 tiles (0 skipped), now at z6 x30 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2418.6 tiles/sec (2418.6 non-empty tiles/sec)
+START seed JPEG_94_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x45 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2568.7 tiles/sec (2568.7 non-empty tiles/sec)
+START seed JPEG_93_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2925 tiles (0 skipped), now at z6 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x60 y45
+seeded 8325 tiles (0 skipped), now at z5 x0 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2542.7 tiles/sec (2542.7 non-empty tiles/sec)
+START seed JPEG_92_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 4950 tiles (0 skipped), now at z6 x0 y30
+seeded 8100 tiles (0 skipped), now at z6 x45 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2484.2 tiles/sec (2484.2 non-empty tiles/sec)
+START seed JPEG_91_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x0 y15
+seeded 8550 tiles (0 skipped), now at z6 x0 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2519.4 tiles/sec (2519.4 non-empty tiles/sec)
+START seed JPEG_90_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 4725 tiles (0 skipped), now at z6 x15 y30
+seeded 8100 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2410.2 tiles/sec (2410.2 non-empty tiles/sec)
+START seed JPEG_89_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 5400 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x0 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2619.2 tiles/sec (2619.2 non-empty tiles/sec)
+START seed JPEG_88_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x45 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2488.7 tiles/sec (2488.7 non-empty tiles/sec)
+START seed JPEG_87_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x60 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2512.9 tiles/sec (2512.9 non-empty tiles/sec)
+START seed JPEG_86_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y15
+seeded 5625 tiles (0 skipped), now at z6 x45 y15
+seeded 9000 tiles (0 skipped), now at z6 x0 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2687.9 tiles/sec (2687.9 non-empty tiles/sec)
+START seed JPEG_85_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+/mapcache/mapcache_seed_test_jpeg_optim_ycbcr_formats.sh: line 2:   989 Segmentation fault      (core dumped) mapcache_seed -c /mapcache/config.xml -g MapGrid -t osm_JPEG_${i}_OPTIM_YCBCR -n 16 -L /mapcache/logs/failed_osm_${i}_0_6.log -P 16 -z 0,6 -M 15,15 -i scanline -b
+START seed JPEG_84_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y0
+seeded 2925 tiles (0 skipped), now at z3 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x45 y30
+seeded 9000 tiles (0 skipped), now at z5 x15 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2548.9 tiles/sec (2548.9 non-empty tiles/sec)
+START seed JPEG_83_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2585.3 tiles/sec (2585.3 non-empty tiles/sec)
+START seed JPEG_82_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x45 y0
+seeded 5175 tiles (0 skipped), now at z3 x0 y0
+seeded 8550 tiles (0 skipped), now at z6 x30 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2636.9 tiles/sec (2636.9 non-empty tiles/sec)
+START seed JPEG_81_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z5 x0 y15
+seeded 7875 tiles (0 skipped), now at z6 x15 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2613.5 tiles/sec (2613.5 non-empty tiles/sec)
+START seed JPEG_80_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x45 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2661.3 tiles/sec (2661.3 non-empty tiles/sec)
+START seed JPEG_79_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x15 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2587.0 tiles/sec (2587.0 non-empty tiles/sec)
+START seed JPEG_78_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2925 tiles (0 skipped), now at z6 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2528.9 tiles/sec (2528.9 non-empty tiles/sec)
+START seed JPEG_77_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2250 tiles (0 skipped), now at z5 x0 y15
+seeded 5400 tiles (0 skipped), now at z6 x15 y15
+seeded 8550 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2646.1 tiles/sec (2646.1 non-empty tiles/sec)
+START seed JPEG_76_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x15 y0
+seeded 4950 tiles (0 skipped), now at z6 x0 y15
+seeded 8550 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2719.4 tiles/sec (2719.4 non-empty tiles/sec)
+START seed JPEG_75_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 5400 tiles (0 skipped), now at z5 x0 y0
+seeded 8100 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2410.0 tiles/sec (2410.0 non-empty tiles/sec)
+START seed JPEG_74_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x60 y45
+seeded 8775 tiles (0 skipped), now at z5 x0 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2676.2 tiles/sec (2676.2 non-empty tiles/sec)
+START seed JPEG_73_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x15 y0
+seeded 4500 tiles (0 skipped), now at z6 x0 y30
+seeded 7875 tiles (0 skipped), now at z6 x30 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2595.2 tiles/sec (2595.2 non-empty tiles/sec)
+START seed JPEG_72_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2599.7 tiles/sec (2599.7 non-empty tiles/sec)
+START seed JPEG_71_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x45 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2442.9 tiles/sec (2442.9 non-empty tiles/sec)
+START seed JPEG_70_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y0
+seeded 8100 tiles (0 skipped), now at z5 x15 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2492.9 tiles/sec (2492.9 non-empty tiles/sec)
+START seed JPEG_69_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z5 x0 y15
+seeded 5175 tiles (0 skipped), now at z6 x0 y15
+seeded 8775 tiles (0 skipped), now at z5 x15 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2523.7 tiles/sec (2523.7 non-empty tiles/sec)
+START seed JPEG_68_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x60 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y15
+seeded 8550 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2643.3 tiles/sec (2643.3 non-empty tiles/sec)
+START seed JPEG_67_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 4725 tiles (0 skipped), now at z6 x0 y15
+seeded 8325 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2571.7 tiles/sec (2571.7 non-empty tiles/sec)
+START seed JPEG_66_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2925 tiles (0 skipped), now at z5 x0 y15
+seeded 5625 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z5 x15 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2653.0 tiles/sec (2653.0 non-empty tiles/sec)
+START seed JPEG_65_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 9000 tiles (0 skipped), now at z5 x15 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2413.3 tiles/sec (2413.3 non-empty tiles/sec)
+START seed JPEG_64_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2475 tiles (0 skipped), now at z6 x15 y0
+seeded 4950 tiles (0 skipped), now at z6 x60 y30
+seeded 8775 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2662.2 tiles/sec (2662.2 non-empty tiles/sec)
+START seed JPEG_63_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2925 tiles (0 skipped), now at z6 x45 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z5 x0 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2569.5 tiles/sec (2569.5 non-empty tiles/sec)
+START seed JPEG_62_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y15
+seeded 5625 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2510.8 tiles/sec (2510.8 non-empty tiles/sec)
+START seed JPEG_61_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 5625 tiles (0 skipped), now at z6 x15 y30
+seeded 9000 tiles (0 skipped), now at z5 x0 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2591.4 tiles/sec (2591.4 non-empty tiles/sec)
+START seed JPEG_60_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8100 tiles (0 skipped), now at z6 x45 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2567.2 tiles/sec (2567.2 non-empty tiles/sec)
+START seed JPEG_59_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 3375 tiles (0 skipped), now at z6 x45 y0
+seeded 5625 tiles (0 skipped), now at z6 x0 y45
+seeded 9000 tiles (0 skipped), now at z6 x15 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2591.1 tiles/sec (2591.1 non-empty tiles/sec)
+START seed JPEG_58_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x0 y30
+seeded 8100 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2551.2 tiles/sec (2551.2 non-empty tiles/sec)
+START seed JPEG_57_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2925 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y30
+seeded 8775 tiles (0 skipped), now at z6 x0 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2555.7 tiles/sec (2555.7 non-empty tiles/sec)
+START seed JPEG_56_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 4725 tiles (0 skipped), now at z5 x0 y15
+seeded 8325 tiles (0 skipped), now at z6 x45 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2502.9 tiles/sec (2502.9 non-empty tiles/sec)
+START seed JPEG_55_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x15 y0
+seeded 5400 tiles (0 skipped), now at z3 x0 y0
+seeded 9000 tiles (0 skipped), now at z5 x15 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2629.7 tiles/sec (2629.7 non-empty tiles/sec)
+START seed JPEG_54_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z3 x0 y0
+seeded 5175 tiles (0 skipped), now at z4 x0 y0
+seeded 8100 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2581.1 tiles/sec (2581.1 non-empty tiles/sec)
+START seed JPEG_53_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.9 seconds at 2425.1 tiles/sec (2425.1 non-empty tiles/sec)
+START seed JPEG_52_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8100 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2644.3 tiles/sec (2644.3 non-empty tiles/sec)
+START seed JPEG_51_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x15 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x0 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2585.6 tiles/sec (2585.6 non-empty tiles/sec)
+START seed JPEG_50_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y15
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x60 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2680.0 tiles/sec (2680.0 non-empty tiles/sec)
+START seed JPEG_49_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z5 x0 y0
+seeded 8550 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2458.2 tiles/sec (2458.2 non-empty tiles/sec)
+START seed JPEG_48_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z5 x0 y0
+seeded 8325 tiles (0 skipped), now at z6 x45 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2480.1 tiles/sec (2480.1 non-empty tiles/sec)
+START seed JPEG_47_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x45 y0
+seeded 4950 tiles (0 skipped), now at z5 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2708.1 tiles/sec (2708.1 non-empty tiles/sec)
+START seed JPEG_46_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y15
+seeded 8550 tiles (0 skipped), now at z6 x0 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2582.9 tiles/sec (2582.9 non-empty tiles/sec)
+START seed JPEG_45_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z6 x0 y30
+seeded 8775 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2601.7 tiles/sec (2601.7 non-empty tiles/sec)
+START seed JPEG_44_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z6 x30 y0
+seeded 4725 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2556.5 tiles/sec (2556.5 non-empty tiles/sec)
+START seed JPEG_43_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x15 y0
+seeded 5400 tiles (0 skipped), now at z5 x0 y0
+seeded 8100 tiles (0 skipped), now at z6 x15 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2481.5 tiles/sec (2481.5 non-empty tiles/sec)
+START seed JPEG_42_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 5625 tiles (0 skipped), now at z5 x0 y30
+seeded 8550 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2569.6 tiles/sec (2569.6 non-empty tiles/sec)
+START seed JPEG_41_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 5400 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x45 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2667.3 tiles/sec (2667.3 non-empty tiles/sec)
+START seed JPEG_40_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x45 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2532.3 tiles/sec (2532.3 non-empty tiles/sec)
+START seed JPEG_39_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y15
+seeded 4950 tiles (0 skipped), now at z6 x30 y0
+seeded 8775 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2603.6 tiles/sec (2603.6 non-empty tiles/sec)
+START seed JPEG_38_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y15
+seeded 8550 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2508.8 tiles/sec (2508.8 non-empty tiles/sec)
+START seed JPEG_37_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z6 x30 y0
+seeded 8775 tiles (0 skipped), now at z6 x15 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2569.6 tiles/sec (2569.6 non-empty tiles/sec)
+START seed JPEG_36_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 3150 tiles (0 skipped), now at z6 x15 y0
+seeded 5400 tiles (0 skipped), now at z5 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2510.8 tiles/sec (2510.8 non-empty tiles/sec)
+START seed JPEG_35_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y15
+seeded 8325 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2657.5 tiles/sec (2657.5 non-empty tiles/sec)
+START seed JPEG_34_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z5 x0 y15
+seeded 8550 tiles (0 skipped), now at z6 x45 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2601.1 tiles/sec (2601.1 non-empty tiles/sec)
+START seed JPEG_33_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z5 x0 y0
+seeded 4725 tiles (0 skipped), now at z6 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x15 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2564.9 tiles/sec (2564.9 non-empty tiles/sec)
+START seed JPEG_32_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z3 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x60 y0
+seeded 8100 tiles (0 skipped), now at z6 x15 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2693.1 tiles/sec (2693.1 non-empty tiles/sec)
+START seed JPEG_31_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x60 y30
+seeded 7875 tiles (0 skipped), now at z6 x15 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2545.5 tiles/sec (2545.5 non-empty tiles/sec)
+START seed JPEG_30_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z6 x15 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x30 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2629.8 tiles/sec (2629.8 non-empty tiles/sec)
+START seed JPEG_29_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2700 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y30
+seeded 9000 tiles (0 skipped), now at z6 x0 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2653.3 tiles/sec (2653.3 non-empty tiles/sec)
+START seed JPEG_28_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x45 y0
+seeded 5625 tiles (0 skipped), now at z6 x0 y45
+seeded 8550 tiles (0 skipped), now at z6 x15 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2628.8 tiles/sec (2628.8 non-empty tiles/sec)
+START seed JPEG_27_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x60 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.8 seconds at 2481.0 tiles/sec (2481.0 non-empty tiles/sec)
+START seed JPEG_26_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x60 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y15
+seeded 8325 tiles (0 skipped), now at z6 x15 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2720.0 tiles/sec (2720.0 non-empty tiles/sec)
+START seed JPEG_25_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 4725 tiles (0 skipped), now at z6 x15 y30
+seeded 9000 tiles (0 skipped), now at z6 x45 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2716.0 tiles/sec (2716.0 non-empty tiles/sec)
+START seed JPEG_24_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5850 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x0 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2627.9 tiles/sec (2627.9 non-empty tiles/sec)
+START seed JPEG_23_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2925 tiles (0 skipped), now at z6 x15 y0
+seeded 5850 tiles (0 skipped), now at z6 x0 y60
+seeded 9000 tiles (0 skipped), now at z6 x15 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2618.9 tiles/sec (2618.9 non-empty tiles/sec)
+START seed JPEG_22_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z6 x30 y0
+seeded 8775 tiles (0 skipped), now at z6 x0 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2616.7 tiles/sec (2616.7 non-empty tiles/sec)
+START seed JPEG_21_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x45 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 4.0 seconds at 2374.9 tiles/sec (2374.9 non-empty tiles/sec)
+START seed JPEG_20_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z3 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y0
+seeded 8550 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2599.4 tiles/sec (2599.4 non-empty tiles/sec)
+START seed JPEG_19_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 5400 tiles (0 skipped), now at z6 x0 y15
+seeded 9000 tiles (0 skipped), now at z6 x45 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2605.7 tiles/sec (2605.7 non-empty tiles/sec)
+START seed JPEG_18_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x15 y0
+seeded 5625 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2551.6 tiles/sec (2551.6 non-empty tiles/sec)
+START seed JPEG_17_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2250 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z5 x0 y15
+seeded 7875 tiles (0 skipped), now at z6 x0 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2595.6 tiles/sec (2595.6 non-empty tiles/sec)
+START seed JPEG_16_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x0 y30
+seeded 8550 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2634.1 tiles/sec (2634.1 non-empty tiles/sec)
+START seed JPEG_15_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x60 y0
+seeded 4950 tiles (0 skipped), now at z6 x45 y15
+seeded 8325 tiles (0 skipped), now at z5 x0 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2619.0 tiles/sec (2619.0 non-empty tiles/sec)
+START seed JPEG_14_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z3 x0 y0
+seeded 4725 tiles (0 skipped), now at z6 x15 y30
+seeded 8550 tiles (0 skipped), now at z6 x45 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2739.1 tiles/sec (2739.1 non-empty tiles/sec)
+START seed JPEG_13_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x15 y0
+seeded 4275 tiles (0 skipped), now at z5 x0 y15
+seeded 8100 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2630.6 tiles/sec (2630.6 non-empty tiles/sec)
+START seed JPEG_12_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z6 x45 y0
+seeded 8775 tiles (0 skipped), now at z6 x0 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2634.4 tiles/sec (2634.4 non-empty tiles/sec)
+START seed JPEG_11_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 4725 tiles (0 skipped), now at z6 x15 y30
+seeded 8325 tiles (0 skipped), now at z6 x0 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2592.7 tiles/sec (2592.7 non-empty tiles/sec)
+START seed JPEG_10_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x0 y15
+seeded 2925 tiles (0 skipped), now at z3 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 9000 tiles (0 skipped), now at z5 x0 y15
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2735.2 tiles/sec (2735.2 non-empty tiles/sec)
+START seed JPEG_9_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x15 y0
+seeded 5625 tiles (0 skipped), now at z6 x30 y15
+seeded 8775 tiles (0 skipped), now at z6 x15 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2656.8 tiles/sec (2656.8 non-empty tiles/sec)
+START seed JPEG_8_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z5 x0 y0
+seeded 5400 tiles (0 skipped), now at z5 x0 y30
+seeded 8325 tiles (0 skipped), now at z6 x15 y0
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.7 seconds at 2532.1 tiles/sec (2532.1 non-empty tiles/sec)
+START seed JPEG_7_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z5 x0 y15
+seeded 5175 tiles (0 skipped), now at z5 x15 y0
+seeded 8775 tiles (0 skipped), now at z6 x15 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2638.5 tiles/sec (2638.5 non-empty tiles/sec)
+START seed JPEG_6_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x15 y0
+seeded 5175 tiles (0 skipped), now at z6 x0 y30
+seeded 9225 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2652.0 tiles/sec (2652.0 non-empty tiles/sec)
+START seed JPEG_5_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2925 tiles (0 skipped), now at z5 x0 y0
+seeded 5400 tiles (0 skipped), now at z6 x45 y30
+seeded 9225 tiles (0 skipped), now at z6 x15 y45
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2666.5 tiles/sec (2666.5 non-empty tiles/sec)
+START seed JPEG_4_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x30 y0
+seeded 4950 tiles (0 skipped), now at z6 x30 y15
+seeded 8550 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2723.8 tiles/sec (2723.8 non-empty tiles/sec)
+START seed JPEG_3_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 4950 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2633.1 tiles/sec (2633.1 non-empty tiles/sec)
+START seed JPEG_2_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2700 tiles (0 skipped), now at z6 x30 y0
+seeded 4725 tiles (0 skipped), now at z6 x0 y0
+seeded 8100 tiles (0 skipped), now at z6 x45 y60
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.6 seconds at 2628.5 tiles/sec (2628.5 non-empty tiles/sec)
+START seed JPEG_1_OPTIM_YCBCR (zoom 0-6, tile 256x256, metatile 15x15, threads 16)
+seeded 225 tiles (0 skipped), now at z4 x15 y15
+seeded 2475 tiles (0 skipped), now at z6 x0 y0
+seeded 5175 tiles (0 skipped), now at z6 x15 y30
+seeded 8775 tiles (0 skipped), now at z6 x30 y30
+
+seeded 42 metatiles (9450 total tiles, 9450 non-empty tiles) in 3.5 seconds at 2681.0 tiles/sec (2681.0 non-empty tiles/sec)

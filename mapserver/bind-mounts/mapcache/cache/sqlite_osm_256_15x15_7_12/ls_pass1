@@ -1,0 +1,13 @@
+total 2759272
+drwxrwxrwx+  2 user     user          4096 May  6 05:36 .
+drwxrwxrwx+ 25 user     user          4096 May  8 17:43 ..
+-rw-rw----+  1 user     user             0 May  3 15:29 .gitkeep
+-rw-r-----+  1 www-data www-data 101101568 May  6 05:36 tiles_JPEG_25_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 136278016 May  6 05:36 tiles_JPEG_50_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 188977152 May  6 05:35 tiles_JPEG_75_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 211394560 May  6 05:34 tiles_JPEG_80_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 241778688 May  6 05:34 tiles_JPEG_85_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 291852288 May  6 05:33 tiles_JPEG_90_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 388341760 May  6 05:32 tiles_JPEG_95_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 640319488 May  6 05:32 tiles_JPEG_BEST_OPTIM_YCBCR.db
+-rw-r-----+  1 www-data www-data 625405952 May  6 05:31 tiles_PNG_FAST.db

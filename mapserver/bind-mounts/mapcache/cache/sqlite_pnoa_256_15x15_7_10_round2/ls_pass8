@@ -1,0 +1,12 @@
+total 767376
+drwxrwxrwx+  2 user user      4096 Apr 29 16:43 .
+drwxrwxrwx+ 20 user user      4096 Apr 30 06:12 ..
+-rw-rw----+  1 user user         0 Apr  4 06:49 .gitkeep
+-rw-r-----+  1 root root  27021312 Apr 29 16:41 tiles_JPEG_85_OPTIM_YCBCR.db
+-rw-r-----+  1 root root  46469120 Apr 29 16:41 tiles_JPEG_95_OPTIM_YCBCR.db
+-rw-r-----+  1 root root  92352512 Apr 29 16:42 tiles_JPEG_BEST_NOOPT_YCBCR.db
+-rw-r-----+  1 root root  79405056 Apr 29 16:42 tiles_JPEG_BEST_OPTIM_YCBCR.db
+-rw-r-----+  1 root root 190476288 Apr 29 16:42 tiles_PNG_BEST.db
+-rw-r-----+  1 root root 192380928 Apr 29 16:43 tiles_PNG_FAST.db
+-rw-r-----+  1 root root  78749696 Apr 29 16:41 tiles_PNGQ_BEST.db
+-rw-r-----+  1 root root  78905344 Apr 29 16:42 tiles_PNGQ_FAST.db

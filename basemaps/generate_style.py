@@ -705,83 +705,83 @@ style = {
    'border_2_inner_pattern': {
       0:''
    },
-   #         'display_border_4': {
-   #            0:0,
-   #            6:1
-   #         },
-   #         'display_border_4_outer': {
-   #            0:0,
-   #            7:1
-   #         },
-   #         'border_4_clr': {
-   #            0:'"#CDCBC6"'
-   #         },
-   #         'border_4_width': {
-   #            0:'5',
-   #            8:'6'
-   #         },
-   #         'border_4_inner_clr': {
-   #            0:'"#8d8b8d"'
-   #         },
-   #         'border_4_inner_width': {
-   #            0:'0.5',
-   #            7:'1'
-   #         },
-   #         'border_4_inner_pattern': {
-   #            0:'',
-   #            7:'PATTERN 2 2 END'
-   #         },
-   #         'display_border_6': {
-   #            0:0,
-   #            7:1
-   #         },
-   #         'display_border_6_outer': {
-   #            0:0,
-   #            9:1
-   #         },
-   #         'border_6_clr': {
-   #            0:'"#CDCBC6"'
-   #         },
-   #         'border_6_width': {
-   #            0:'5',
-   #            13:'7'
-   #         },
-   #         'border_6_inner_clr': {
-   #            0:'"#8d8b8d"'
-   #         },
-   #         'border_6_inner_width': {
-   #            0:'0.5',
-   #            9:1
-   #         },
-   #         'border_6_inner_pattern': {
-   #            0:'',
-   #            9:'PATTERN 2 2 END'
-   #         },
-   #         'display_border_8': {
-   #            0:0,
-   #            11:1
-   #         },
-   #         'display_border_8_outer': {
-   #            0:0,
-   #            13:1
-   #         },
-   #         'border_8_clr': {
-   #            0:'"#CDCBC6"'
-   #         },
-   #         'border_8_width': {
-   #            0:'5'
-   #         },
-   #         'border_8_inner_clr': {
-   #            0:'"#8d8b8d"'
-   #         },
-   #         'border_8_inner_width': {
-   #            0:'0.5',
-   #            14:'1'
-   #         },
-   #         'border_8_inner_pattern': {
-   #            0:'',
-   #            13:'PATTERN 2 2 END'
-   #         },
+            'display_border_4': {
+               0:0,
+               6:1
+            },
+            'display_border_4_outer': {
+               0:0,
+               7:1
+            },
+            'border_4_clr': {
+               0:'"#CDCBC6"'
+            },
+            'border_4_width': {
+               0:'5',
+               8:'6'
+            },
+            'border_4_inner_clr': {
+               0:'"#8d8b8d"'
+            },
+            'border_4_inner_width': {
+               0:'0.5',
+               7:'1'
+            },
+            'border_4_inner_pattern': {
+               0:'',
+               7:'PATTERN 2 2 END'
+            },
+            'display_border_6': {
+               0:0,
+               7:1
+            },
+            'display_border_6_outer': {
+               0:0,
+               9:1
+            },
+            'border_6_clr': {
+               0:'"#CDCBC6"'
+            },
+            'border_6_width': {
+               0:'5',
+               13:'7'
+            },
+            'border_6_inner_clr': {
+               0:'"#8d8b8d"'
+            },
+            'border_6_inner_width': {
+               0:'0.5',
+               9:1
+            },
+            'border_6_inner_pattern': {
+               0:'',
+               9:'PATTERN 2 2 END'
+            },
+            'display_border_8': {
+               0:0,
+               11:1
+            },
+            'display_border_8_outer': {
+               0:0,
+               13:1
+            },
+            'border_8_clr': {
+               0:'"#CDCBC6"'
+            },
+            'border_8_width': {
+               0:'5'
+            },
+            'border_8_inner_clr': {
+               0:'"#8d8b8d"'
+            },
+            'border_8_inner_width': {
+               0:'0.5',
+               14:'1'
+            },
+            'border_8_inner_pattern': {
+               0:'',
+               13:'PATTERN 2 2 END'
+            },
 
 
    ###### buildings ######
@@ -1202,7 +1202,16 @@ namedstyles = {
       'other_ol_clr': '193 181 157',
       'pedestrian_ol_clr': '193 181 157',
       'pier_ol_clr': '193 181 157',
-      'display_buildings':1
+      
+      # Modified items
+      'display_buildings': {
+         0: 0,
+         9:1
+      },
+      'display_places': {
+      	0: 0,
+      	3: 1
+      },
    },
    'michelin':{
       'motorway_clr': '228 24 24',

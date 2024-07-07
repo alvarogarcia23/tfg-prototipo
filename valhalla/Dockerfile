@@ -16,12 +16,39 @@ RUN cd /usr/local/bin && \
 FROM ubuntu:23.04 as runner_base
 MAINTAINER Nils Nolde <nils@gis-ops.com>
 
-RUN apt-get update > /dev/null && \
-  export DEBIAN_FRONTEND=noninteractive && \
-  apt-get install -y libluajit-5.1-2 libgdal32 \
-  libzmq5 libczmq4 spatialite-bin libprotobuf-lite32 sudo locales \
-  libsqlite3-0 libsqlite3-mod-spatialite libcurl4 \
-  python3.11-minimal python3-distutils curl unzip moreutils jq spatialite-bin python-is-python3 > /dev/null
+#RUN apt-get update > /dev/null && \
+#  export DEBIAN_FRONTEND=noninteractive && \
+# Install updates
+RUN --mount=type=cache,id=valhalla-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=valhalla-apt-lib,target=/var/lib/apt,sharing=locked apt-get update \
+    && apt-get dist-upgrade -y \
+    #Unbrick upgrades.
+    && apt-get -y install \
+        locales
+
+RUN locale-gen en_US.UTF-8 \
+    && update-locale LANG=en_US.UTF-8
+
+RUN --mount=type=cache,id=valhalla-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=valhalla-apt-lib,target=/var/lib/apt,sharing=locked export DEBIAN_FRONTEND=noninteractive && \
+  apt-get install -y \
+	libgdal32 \
+	libluajit-5.1-2 \
+	libzmq5 \
+	libczmq4 \
+	spatialite-bin \
+	libprotobuf-lite32 \
+	sudo \
+	locales \
+	libsqlite3-0 \
+	libsqlite3-mod-spatialite \
+	libcurl4 \
+	python3.11-minimal \
+	python3-distutils \
+	curl \
+	unzip \
+	moreutils \
+	jq \
+	spatialite-bin \
+	python-is-python3
 
 COPY --from=builder /usr/local /usr/local
 COPY --from=builder /usr/lib/python3/dist-packages/valhalla/* /usr/lib/python3/dist-packages/valhalla/
@@ -49,6 +76,7 @@ RUN groupadd -g ${VALHALLA_GID} valhalla && \
   if [ $VALHALLA_UID != 59999 ] || [ $VALHALLA_GID != 59999 ]; then chmod 0775 custom_files && chown valhalla:valhalla /custom_files; else usermod -aG sudo valhalla && echo "ALL            ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers; fi
 
 COPY scripts/. /valhalla/scripts
+RUN chmod 755 /valhalla/scripts -R
 
 USER valhalla
 

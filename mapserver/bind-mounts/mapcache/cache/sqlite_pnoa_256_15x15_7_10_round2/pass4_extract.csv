@@ -1,0 +1,8 @@
+JPEG_85_OPTIM_YCBCR;failed to seed tile z8,x120,y150; 11,5;409,5;409,5
+JPEG_95_OPTIM_YCBCR;failed to seed tile z8,x120,y150; 11,6;408,0;408,0
+PNGQ_BEST;failed to seed tile z8,x120,y150; 30,1;156,7;156,7
+PNGQ_FAST;failed to seed tile z8,x120,y150; 29,6;159,8;159,8
+JPEG_BEST_OPTIM_YCBCR;failed to seed tile z8,x120,y150; 11,7;402,6;402,6
+JPEG_BEST_NOOPT_YCBCR;failed to seed tile z8,x120,y150; 10,8;436,5;436,5
+PNG_BEST;failed to seed tile z8,x120,y150; 17,1;276,1;276,1
+PNG_FAST;failed to seed tile z8,x120,y150; 12,6;374,9;374,9

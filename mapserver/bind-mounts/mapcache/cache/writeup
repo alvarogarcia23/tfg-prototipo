@@ -1,0 +1,116 @@
+% \chapter\section\sub(^n)section{}
+
+Otros de los ajustes más importantes en MapCache son los del formato de imagen con el que se almacenan las teselas recabadas~\cite{mapcache-config-docs}, ofreciendo en una primera bifurcación alternar entre PNG o JPEG.
+
+En el caso de elegir el uso de PNG, adicionalmente se puede:
+\begin{enumerate}[noitemsep]
+ \item Alternar el nivel de compresión de entre los dos disponibles: mejor (\textit{best}) y mas rápida (\textit{fast})\footnote{Según sus desarrolladores, la elección no tiene aparentemente un gran impacto en el espacio ocupado por cada tesela, pero sí es significativo en el uso de CPU incurrido al generar la copia caché (dada la compresión sin pérdidas usada por el formato de imagen).}.
+ \item Seleccionar si se desea reducir la paleta de colores usada en cada tesela a un conjunto de entre 2 y 256 colores, optimizando su tamaño para su uso en entornos web a costa de posibles pérdidas si aparecen más tonos en cada tesela del máximo especificado.
+\end{enumerate}
+
+Y, en el caso de elegir el uso de JPEG, adicionalmente se puede:
+\begin{enumerate}[noitemsep]
+ \item Establecer el nivel de compresión con pérdida en el rango 1-100, que a bajos niveles puede llegar a generar artefactos o aberraciones visibles en las imágenes.
+ \item Elegir el espacio de color entre YCbCr, mas habitual en fotografía y vídeo, y el más extendido RGB.
+ \item Activar o alterar el algortimo de una segunda compresión sin pérdidas (optimización), pudiendo elegir entre desactivarla, usar el algoritmo de codificación Huffman\footnote{Denotado internamente y documentado sin mención a Huffman (creador del algoritmo), aunque queda claro al consultar los estándares relevantes.} o de codificación aritmética, más impopular pero también más eficiente \footnote{Por la relativamente bloqueadora acción de patentes sobre el algoritmo, que han hecho de la implementación de lectores y compresores compatibles una \textit{rara avis}}.
+\end{enumerate}
+
+%https://fotoforensics.com/tutorial-estq.php
+%https://www.w3.org/Graphics/JPEG/itu-t81.pdf
+%http://tools.ietf.org/html/rfc2435
+
+Además, dado que MapCache dispone de una herramienta de generación procedural de la copia caché (semillado) denominada \verb|mapcache_seed|, se optó por su uso para asegurar disponer de la copia más completa posible. Revisando las opciones disponibles en ella, esta permite alterar, durante el semillado, cuestiones como:
+
+\begin{itemize}[noitemsep]
+\item El número de hilos o de procesos a emplear.
+\item El metateselado a aplicar (el número de teselas a abarcar en cada petición que se haga al servicio-origen de mapas involucrado).
+\item Los niveles de escala a cubrir.
+\end{itemize}
+
+Dado el extenso abanico de posibles opciones, se hizo necesario realizar pruebas para determinar las mejores combinaciones de las posibilidades anteriores, a fin de elegir los ajustes de formato de imágen y de la herramienta de semillado finalmente usados en base a los criterios de rendimiento temporal y eficiencia en el uso de almacenamiento.
+
+\subsubsection*{Proceso de pruebas}
+
+Con motivo de las pruebas, se crearon diversas permutaciones de configuraciones de formatos de imagen en el archivo de configuración de MapCache, vinculadas biyectivamente a distintos archivos SQLite mediante las entradas de tipo ''\textit{tileset}´´ (conjunto de teselas) necesarias, abarcando la gran mayoría de aquellas y excluyendo la mera exhaustividad de posibles valores para el nivel de calidad en el formato JPEG y de la reducción de paleta de colores en el PNG, semillando posteriormente las teselas que cubriesen unas mismas extensas áreas mediante \verb|mapcache_seed|. La relación de las combinaciones dispuestas puede consultarse en el anexo \ref{annex:png-jpeg-options-relation}.
+
+% FIXME include reference to mapcache tilesets, formats and cachefiles naming convention.
+
+
+% \chapter\section\sub(^n)section{Desarrollo de la prueba de formatos de imagen}
+
+En una primera fase, se procedió a buscar los ajustes más adecuados para la herramienta de semillado recurriendo primero al método de prueba y error de forma manual sobre el número de hilos o procesos, determinando que es mejor el uso de hilos (debido a \textit{bugs} subyacientes en el sistema de paralelismo mediante procesos) y que sólo se pueden disponer 16 hilos antes de que empiecen a aparecer errores HTTP 503 aleatoria y consistentemente debido a la sobrecarga inducida sobre el sistema local\footnote{Esto podría tener relación con el hecho de que la CPU de la máquina usada como entorno de desarrollo y pruebas cuenta con 16 hilos, no disponiéndose de otra con la que ratificar o refutar esta hipótesis.}. Posteriormente, y abandonando el sistema de prueba y error anterior, se valoró el tiempo necesario para generar la copia caché de los 7 primeros niveles de escala disponibles (de 19 totales, a fin de concluir en tiempo razonable ya que con cada nivel de escala el número de teselas a obtener se cuadriplica y, con ello, el tiempo empleado) para la totalidad del globo terrestre usando tanto el mapa base generado localmente a partir de datos de OpenStreetMap (OSM) como la representación resultante de obtener sólo imágenes aéreas y de satélite de las publicadas por el Instituto Geográfico Nacional (IGN) en el marco del Plan Nacional de Ortofotografía Aérea (PNOA) mediante su servicio WMS, repitiéndolo 10 veces para emplear las medias de tiempos y tamaños observados con tales muestras (n=10) con un mínimo de fiabilidad para hallar el mejor nivel de metateselado.
+
+Partiendo de la hipótesis de que a mayor nivel de metateselado se apreciarán mejores tiempos en el proceso de semillado, sustentada en los menores uso de red y de número de escrituras en el archivo de almacenamiento sqlite dispuesto, se procedió a realizar la prueba descrita disponiendo el metateselado en 1x1, 8x8 y 15x15 teselas, no pudiendo incrementarlo más por limitaciones de la herramienta. Los resultados recabados, disponibles en el anexo \ref{annex:image-formats-step-1-results}, vienen a confirmar la hipótesis descrita, por lo que se continuó fijando el metateselado a 15x15 teselas.
+
+Adicionalmente, de la interpretación de resultados de las observaciones con metateselado 15x15, se concluyó:
+\begin{itemize}
+\item Para las combinaciones de configuración de formato de imagen basados en JPEG:
+\begin{enumerate}
+\item El uso de la codificación de colores RGB resulta en la generación de archivos de almacenamiento de en torno al doble de espacio en comparación con la YCbCr, que redunda en archvos aproximadamente un 50\% más ligeros, motivando el descarte de toda opción que emplease la codificación RGB, con independencia de otros parámetros.
+\item El uso de la optimización aritmética implica internamente el empleo de algoritmos que presentan un comportamiento aparentemente de orden exponencial (respecto del umbral de calidad de compresión elegido) en tiempo y tamaño de salida, además de tardar más que otras alternativas con el mismo umbral de calidad, motivando el descarte de toda opción que emplee optimización aritmética, con indepencia de otros parámetros.
+\item El uso de la optimización no aritmética, si bien supone un proceso adicional de procesado que incrementa el tiempo necesario para completar la generación de teselas del semillado, supone, en la mayoría de casos, un incremento de en torno a un mero 1\% del tiempo total respecto a la misma configuración sin optimizaciones de la imagen. No obstante, su uso supone un ahorro de espacio mínimo del 15\% aproximadamente y con máximos observados superiores al 50%, motivando el descarte de toda opción que no emplease la optimización no aritmética, con independencia de otros parámetros.
+\end{enumerate}
+
+\item Y para las combinaciones de configuración de formato de imagen basados en PNG:
+\begin{enumerate}
+\item El empleo, en la paleta de colores usados en cada tesela, de reducciones del número de tales colores conlleva generalmente mayores tiempos de procesado en comparación con mantener la totalidad de tonos de color disponibles en las imágenes originales, probablemente debido a los cómputos necesarios. Esto motivó el descarte de toda configuración que emplease reducciones del número de colores presentes en cada tesela, con independencia de otros parámetros.
+\item El empleo del perfil de compresión 'mejor' redunda en una reducción del tamaño total, pero necesitando en cualquier caso de más del doble de tiempo para concluir. Esto motivó el descarte de toda configuración que emplease el perfil de compresión mejorada.
+\end{enumerate}
+\end{itemize}
+
+
+Los descartes de configuraciones realizados implicaron continuar exclusivamente con las configuraciones de la tabla \ref{image-formats-step-2-candidates}, expuesta más adelante.
+
+% FIXME table of configs
+
+
+Realizado el grueso de descartes anterior, se continuó con una segunda fase en la que se repitió el experimento anterior de semillado alterando algunos parámetros, procediendo a generar copia caché de sólo una región del globo, abarcando un rectángulo que inscribe a Castilla y León y unos kilómetros alrededor de la Comunidad para los niveles de escala 7 a 12 (de los existentes 0 a 18). Los resultados recabados, disponibles en el anexo \ref{annex:image-formats-step-2-results}, evidencian lo siguiente:
+
+\begin{enumerate}
+\item Los formatos de imagen seleccionados basados en JPEG con optimización no aritmética y codificación del color mediante YCbCr son más eficientes en tiempo necesario para generar la copia caché y espacio necesario para almacenarla que el anteriormente seleccionado basado en PNG.
+\item Los formatos de imagen previamente seleccionados basados en JPEG son, entre sí, más ineficientes tanto en tiempo (de forma aparentemente linear) como en espacio (de forma aparentemente exponencial) conforme se aumenta el umbral de calidad aceptable.
+\end{enumerate}
+
+Adicionalmente, hay que destacar un extraño fenómeno al interpretar los datos recabados: el descenso de la métrica 'teselas por segundo' en esta fase respecto de la anterior. Para el mapa generado con la información local de OSM, esto probablemente se deba a las nuevas informaciones que se han de incorporar al mapa en estos niveles de escala y que antes no se computaban ya que eran inperceptibles por efecto de la reducción de la escala. Y para el mapa con la ortofotografía aérea del PNOA, como lidiamos con un origen de datos remoto y público, probablemente se deba a que disponga de elementos que podrían, en diversas circunstancias, alterar el rendimiento de tal origen, como por ejemplo:
+
+\begin{itemize}
+\item La congestión de la Red.
+\item La existencia de una infraestructura de alta disponibilidad basada en la redundancia hardware con equipos heterogéneos.
+\item Los niveles de carga experimentados por el/los servidor(es) remoto(s) en el momento de atender las peticiones realizadas.
+\item La disposición de distintos sistemas de almacenamiento dependiendo del nivel de escala o la región del espacio solicitada, con distintos niveles de rendimiento.
+\end{itemize}
+
+El hecho de que tal comportamiento se mantenga a lo largo de las diversas repeticiones de las pruebas realizadas (esto es, a lo largo del tiempo observado) apunta a que probablemente estemos tratando con un sistema que tiene distintos sistemas de almacenamiento como se indica en el último punto de la lista anterior, lo que, junto a la inspección de la carga del sistema local durante la ejecución de las pruebas descritas, viene a disolver las posibles dudas que surgieron de que la batería de pruebas pudiera estar siendo ejecutada incorrectamente debido a, por ejemplo, interferencia en la disponibilidad de recursos locales debido a su empleo por otros procesos concurrentes en el sistema.
+
+Las conclusiones de esta fase hacen que la decisión de qué formato deba usarse deba ser informada por una inspección visual de la fidelidad de las teselas mediante comparación de un mismo conjunto de teselas en los distintos formatos seleccionados ya que, como el formato JPEG acarrea necesariamente una compresión con pérdidas, pueden llegar a producirse artefactos que distorsionen la información de las teselas y lleven a error a las personas cuando estas intenten reconocer los elementos que se plasmen en ellas. En este sentido, debe recordarse el objeto del sistema, que es el de asistir en el confeccionamiento de rutas, por lo que tiene sentido que se evalúe si, por ejemplo, los artefactos que aparezcan impiden la lectura del mapa o el reconocimiento de elementos como edificaciones, vías, muros o vallados; y no tiene tanto sentido evaluar si dificultan o impiden reconocer, por ejemplo, la presencia de personas o del pequeño mobiliario urbano.
+
+Tal apreciación se llevó a cabo configurando, generando y comparando copias caché para las mismas regiones del espacio usando JPEG con codificación YCbCr, optimización de Huffman y los umbrales de nivel de calidad 1, 10, 20, 30, 40, 50, 60, 70, 80, 90 y 100; así como con el formato PNG seleccionado previamente (con compresión rápida y sin reducción de paleta de colores), asegurando la revisión de distintos niveles de escala (incluyendo las no generadas hasta este momento) además de distintas regiones del espacio. Como resultado de esta inspección ocular se determinó que el uso de JPEG con los ajuestes indicados antes en este párrafo son viables solamente cuando el umbral de calidad se establece igual o superior a 60, detectando los siguientes tipos de distorsiones en umbrales inferiores:
+
+\begin{itemize}
+\item Eliminación de colores usados en zonas extensas.
+\item Aparición de ruido que dificulta o incluso confunde la interpretación de elementos.
+\item Infiltración del color de contorno/reborde en elementos tipográficos incrustados, dificultando o impidiendo su correcta lectura.
+\item Difuminación y/o interrupción de elementos finos.
+\end{itemize}
+
+Si bien algunas de las distorsiones indicadas siguen presentándose a umbrales superiores, analizando diversas zonas rurales y urbanas usando el umbral de calidad de compresión 60 no se encontraron ocurrencias donde tales distorsiones dificultaran la lectura, la interpretación o el reconocimiento de elementos plasmados en las teselas. No obstante, tal inspección no se realizó de manera exhaustiva, por lo que cabe la posibilidad de que, si bien rara, surjiese alguna tesela en la que las distorsiones acaecidas por la compresión sí pudieran llegar a presentar dificultades al leer, interpretar o reconocer los elementos que incluya. Ello motivó seleccionar tal nivel de compresión como el idóneo para el formato de imagen JPEG.
+
+%https://fotoforensics.com/tutorial-estq.php
+
+%Las teselas revisadas pueden consultarse en el anexo \ref{annex:image-formats-step-3-results}, resultando que el formato de imagen JPEG usando compresión no aritmética, codificación de color YCrCb y un umbral de calidad de la compresión de 50 es viable para el uso actual ya que cumple con las condiciones indicadas en el párrafo anterior, a pesar de los ligeros cambios en el color producto de la compresión con pérdidas aplicada, por lo que se continuó usando dicho formato de imagen. 
+
+Como ya se veía en la tabla \ref{image-formats-step-2-candidates}, sólo quedaba como candidata una única configuración de formato de imagen PNG, por lo que ha de considerarse idónea. Con ello, las configuraciones de formato de imagen consideradas idóneas se recogen en la tabla \ref{image-formats-best-contenders}. No obstante, dada la diferencia en tiempo de procesamiento y espacio de alamacenamiento usado, y considerada la diferencia final entre imágenes en uno y otro formato en el sentido de las distorsiones anteriormente referidas, \textit{se continuó utilizando el formato JPEG de la última tabla indicada} ya que es más eficiente y la degradación de imagen asociada (ausente en el formato PNG) no se traduce en inconvenientes a la hora de usar las teselas resultantes.
+
+
+Elegido el formato de imagen, se procedió a realizar el semillado correspondiente a las regiones del espacio señaladas en la tabla \ref{table:mapcache-seed-regions}, disponible más adelante, mediante la herramienta de semillado \verb|mapcache_seed|. Llegado este punto debe reseñarse que, dado que cabe la posibilidad de que los orígenes de información remotos (a los que MapServer recurre para cubrir las solicitudes de MapCache durante la generación de la copia caché) respondan con datos corruptos resultando en la imposibilidad de generar teselas para la zona que se hubiese solicitado, la generación de la copia caché ha de hacerse reduciendo sucesivamente el metateselado aplicado, haciendo que tal falla remota afecte así exclusivamente a una única tesela sin sacrificar en el proceso la mejora de rendimiento asociada al uso de metateselado. Ello desembocó en la creación del script disponible en \verb|/|
+% FIXME create script, put path in
+, que gestiona todo este proceso de forma automática, buscando la eficiencia temporal\footnote{Repitiendo la generación con los mismos parámetros de metateselado hasta que no se puedan generar más teselas} y asegurando la copia caché mas completa posile\footnote{Reduciendo escalonadamente el metateselado}.
+
+
+
+
+
+
+
+
+

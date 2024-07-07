@@ -7,6 +7,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=C.UTF-8
 
 WORKDIR /app
+    
+RUN mkdir /nominatim
 
 # Inspired by https://github.com/reproducible-containers/buildkit-cache-dance?tab=readme-ov-file#apt-get-github-actions
 RUN  \
@@ -20,6 +22,7 @@ RUN  \
     && chmod +x /usr/sbin/policy-rc.d \
     # Install all required packages.
     && apt-get -y update -qq \
+    && apt-get -y dist-upgrade -qq \
     && apt-get -y install \
         locales \
     && locale-gen en_US.UTF-8 \
@@ -39,12 +42,12 @@ RUN  \
         libboost-system-dev \
         libboost-filesystem-dev \
         liblua5.4-dev \
+	liblua5.4-0 \
         nlohmann-json3-dev \
         # PostgreSQL.
         postgresql-contrib \
         postgresql-server-dev-14 \
-        postgresql-14-postgis-3 \
-        postgresql-14-postgis-3-scripts \
+        postgresql-client-14 \
         # PHP and Apache 2.
         php \
         php-intl \
@@ -72,12 +75,6 @@ RUN  \
         sudo \
         sshpass \
         openssh-client
-
-
-# Configure postgres.
-RUN true \
-    && echo "host all all 0.0.0.0/0 md5" >> /etc/postgresql/14/main/pg_hba.conf \
-    && echo "listen_addresses='*'" >> /etc/postgresql/14/main/postgresql.conf
 
 # Osmium install to run continuous updates.
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
@@ -121,15 +118,10 @@ RUN true \
 # Apache configuration
 COPY conf.d/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
-# Postgres config overrides to improve import performance (but reduce crash recovery safety)
-COPY conf.d/postgres-import.conf /etc/postgresql/14/main/conf.d/postgres-import.conf.disabled
-COPY conf.d/postgres-tuning.conf /etc/postgresql/14/main/conf.d/
-
 COPY config.sh /app/config.sh
 COPY init.sh /app/init.sh
 COPY start.sh /app/start.sh
 COPY startapache.sh /app/startapache.sh
-COPY startpostgres.sh /app/startpostgres.sh
 
 # Collapse image to single layer.
 FROM scratch
@@ -150,5 +142,6 @@ EXPOSE 5432
 EXPOSE 8080
 
 COPY conf.d/env $PROJECT_DIR/.env
+RUN chmod 755 /nominatim -R
 
 CMD ["/app/start.sh"]

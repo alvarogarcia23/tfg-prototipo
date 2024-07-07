@@ -1,0 +1,61 @@
+START seed PNG_FAST (zoom 7-10, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x510 y600
+seeded 450 tiles (0 skipped), now at z9 x240 y315
+seeded 1125 tiles (0 skipped), now at z10 x525 y600
+seeded 1800 tiles (0 skipped), now at z10 x510 y615
+seeded 2475 tiles (0 skipped), now at z10 x510 y630
+seeded 2925 tiles (0 skipped), now at z10 x510 y645
+seeded 3375 tiles (0 skipped), now at z10 x525 y645
+seeded 3825 tiles (0 skipped), now at z8 x120 y150
+seeded 4275 tiles (0 skipped), now at z10 x495 y615
+seeded 4725 tiles (0 skipped), now at z7 x60 y75
+seeded 4950 tiles (0 skipped), now at z10 x495 y630
+
+seeded 22 metatiles (4950 total tiles, 4950 non-empty tiles) in 17.8 seconds at 277.9 tiles/sec (277.9 non-empty tiles/sec)
+START seed JPEG_50_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 675 tiles (0 skipped), now at z10 x480 y600
+seeded 1125 tiles (0 skipped), now at z10 x495 y600
+seeded 1350 tiles (0 skipped), now at z10 x510 y600
+seeded 2250 tiles (0 skipped), now at z8 x120 y150
+seeded 3150 tiles (0 skipped), now at z10 x525 y615
+seeded 4275 tiles (0 skipped), now at z10 x495 y645
+seeded 4950 tiles (0 skipped), now at z10 x495 y630
+
+seeded 22 metatiles (4950 total tiles, 4950 non-empty tiles) in 15.4 seconds at 322.2 tiles/sec (322.2 non-empty tiles/sec)
+START seed JPEG_80_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x495 y600
+seeded 900 tiles (0 skipped), now at z9 x255 y315
+seeded 1800 tiles (0 skipped), now at z10 x480 y615
+seeded 2475 tiles (0 skipped), now at z10 x480 y630
+seeded 3150 tiles (0 skipped), now at z7 x60 y75
+seeded 3825 tiles (0 skipped), now at z10 x510 y615
+seeded 4275 tiles (0 skipped), now at z10 x480 y645
+seeded 4725 tiles (0 skipped), now at z10 x510 y645
+seeded 4950 tiles (0 skipped), now at z10 x495 y630
+
+seeded 22 metatiles (4950 total tiles, 4950 non-empty tiles) in 15.6 seconds at 318.2 tiles/sec (318.2 non-empty tiles/sec)
+START seed JPEG_95_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 675 tiles (0 skipped), now at z10 x480 y600
+seeded 1125 tiles (0 skipped), now at z10 x495 y600
+seeded 2025 tiles (0 skipped), now at z9 x240 y315
+seeded 3150 tiles (0 skipped), now at z10 x525 y645
+seeded 4050 tiles (0 skipped), now at z10 x510 y645
+seeded 4275 tiles (0 skipped), now at z10 x480 y645
+seeded 4725 tiles (0 skipped), now at z10 x480 y630
+seeded 4950 tiles (0 skipped), now at z10 x495 y630
+
+seeded 22 metatiles (4950 total tiles, 4950 non-empty tiles) in 15.6 seconds at 318.2 tiles/sec (318.2 non-empty tiles/sec)
+START seed JPEG_BEST_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x510 y600
+seeded 450 tiles (0 skipped), now at z9 x255 y315
+seeded 675 tiles (0 skipped), now at z9 x255 y300
+seeded 1125 tiles (0 skipped), now at z10 x510 y645
+seeded 1350 tiles (0 skipped), now at z10 x480 y615
+seeded 2250 tiles (0 skipped), now at z8 x120 y150
+seeded 3150 tiles (0 skipped), now at z10 x495 y630
+seeded 3825 tiles (0 skipped), now at z10 x525 y615
+seeded 4950 tiles (0 skipped), now at z10 x480 y630
+
+seeded 22 metatiles (4950 total tiles, 4950 non-empty tiles) in 15.3 seconds at 324.3 tiles/sec (324.3 non-empty tiles/sec)

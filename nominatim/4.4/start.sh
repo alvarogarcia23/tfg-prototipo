@@ -5,12 +5,7 @@ replicationpid=0
 
 stopServices() {
   service apache2 stop
-  service postgresql stop
-  # Check if the replication process is active
-  if [ $replicationpid -ne 0 ]; then
-    echo "Shutting down replication process"
-    kill $replicationpid
-  fi
+  kill $replicationpid
   kill $tailpid
   # Force exit code 0 to signal a succesfull shutdown to Docker
   exit 0
@@ -25,7 +20,7 @@ else
   useradd -m -p ${NOMINATIM_PASSWORD} nominatim
 fi
 
-IMPORT_FINISHED=/var/lib/postgresql/14/main/import-finished
+IMPORT_FINISHED=/nominatim/tokenizer/import-finished
 
 if [ ! -f ${IMPORT_FINISHED} ]; then
   /app/init.sh
@@ -33,8 +28,6 @@ if [ ! -f ${IMPORT_FINISHED} ]; then
 else
   chown -R nominatim:nominatim ${PROJECT_DIR}
 fi
-
-service postgresql start
 
 cd ${PROJECT_DIR} && sudo -E -u nominatim nominatim refresh --website --functions
 
@@ -62,7 +55,7 @@ if [ "$REPLICATION_URL" != "" ] && [ "$FREEZE" != "true" ]; then
 fi
 
 # fork a process and wait for it
-tail -Fv /var/log/postgresql/postgresql-14-main.log /var/log/apache2/access.log /var/log/apache2/error.log /var/log/replication.log &
+tail -Fv /var/log/apache2/access.log /var/log/apache2/error.log /var/log/replication.log &
 tailpid=${!}
 
 export NOMINATIM_QUERY_TIMEOUT=600

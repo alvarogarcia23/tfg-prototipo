@@ -8,17 +8,38 @@ ENV LANG=C.UTF-8
 
 WORKDIR /app
 
-RUN true \
     # Do not start daemons after installation.
-    && echo '#!/bin/sh\nexit 101' > /usr/sbin/policy-rc.d \
-    && chmod +x /usr/sbin/policy-rc.d \
-    # Install all required packages.
-    && apt-get -y update -qq \
+RUN echo '#!/bin/sh\nexit 101' > /usr/sbin/policy-rc.d \
+    && chmod +x /usr/sbin/policy-rc.d
+    
+RUN useradd -m nominatim -d /nominatim
+
+# Install updates
+RUN --mount=type=cache,id=nominatim-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=nominatim-apt-lib,target=/var/lib/apt,sharing=locked apt-get update \
+    && apt-get dist-upgrade -y \
+    #Unbrick upgrades.
     && apt-get -y install \
         locales \
-    && locale-gen en_US.UTF-8 \
-    && update-locale LANG=en_US.UTF-8 \
-    && apt-get -y install \
+        ca-certificates \
+        wget \
+        gpg
+
+RUN install -m 0755 -d /etc/apt/keyrings
+
+ADD https://www.postgresql.org/media/keys/ACCC4CF8.asc /etc/apt/keyrings/ACCC4CF8.asc
+RUN gpg --dearmor /etc/apt/keyrings/ACCC4CF8.asc \
+	&& mv /etc/apt/keyrings/ACCC4CF8.asc.gpg /etc/apt/keyrings/pgdg.gpg \
+	&& chmod a+r /etc/apt/keyrings/pgdg.gpg \
+	&& echo "deb [signed-by=/etc/apt/keyrings/pgdg.gpg] https://apt.postgresql.org/pub/repos/apt jammy-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+	
+RUN --mount=type=cache,id=nominatim-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=nominatim-apt-lib,target=/var/lib/apt,sharing=locked apt-get update \
+    && apt-get dist-upgrade -y
+
+RUN locale-gen en_US.UTF-8 \
+    && update-locale LANG=en_US.UTF-8
+
+RUN --mount=type=cache,id=nominatim-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=nominatim-apt-lib,target=/var/lib/apt,sharing=locked apt-get -y install \
+    # Install all required packages.
         -o APT::Install-Recommends="false" \
         -o APT::Install-Suggests="false" \
         # Build tools from sources.
@@ -33,13 +54,12 @@ RUN true \
         libboost-dev \
         libboost-system-dev \
         libboost-filesystem-dev \
+	liblua5.4-0 \
         liblua5.4-dev \
         nlohmann-json3-dev \
         # PostgreSQL.
-        postgresql-contrib \
         postgresql-server-dev-14 \
-        postgresql-14-postgis-3 \
-        postgresql-14-postgis-3-scripts \
+        postgresql-client-14 \
         # PHP and Apache 2.
         php \
         php-intl \
@@ -68,14 +88,10 @@ RUN true \
         sshpass \
         openssh-client
 
-
-# Configure postgres.
-RUN true \
-    && echo "host all all 0.0.0.0/0 md5" >> /etc/postgresql/14/main/pg_hba.conf \
-    && echo "listen_addresses='*'" >> /etc/postgresql/14/main/postgresql.conf
-
 # Osmium install to run continuous updates.
-RUN pip3 install osmium
+RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade pyyaml
+RUN pip3 install osmium 
 
 # Nominatim install.
 ARG NOMINATIM_VERSION
@@ -90,9 +106,8 @@ RUN true \
     && make -j`nproc` \
     && make install
 
-RUN true \
+RUN --mount=type=cache,id=nominatim-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=nominatim-apt-lib,target=/var/lib/apt,sharing=locked apt-get -y remove --purge \
     # Remove development and unused packages.
-    && apt-get -y remove --purge \
         cpp-9 \
         gcc-9* \
         g++ \
@@ -104,12 +119,20 @@ RUN true \
         linux-libc-dev \
         libclang-*-dev \
         build-essential \
-        liblua*-dev \
+#        liblua*-dev \
         postgresql-server-dev-14 \
+        postgresql-server-dev-16 \
         nlohmann-json3-dev \
-    && apt-get clean \
+    && apt-get autoremove -y
+    
+RUN --mount=type=cache,id=nominatim-apt-cache,target=/var/cache/apt,sharing=locked --mount=type=cache,id=nominatim-apt-lib,target=/var/lib/apt,sharing=locked apt-get -y install \
+    # Install all required packages.
+        -o APT::Install-Recommends="false" \
+        -o APT::Install-Suggests="false" \
+	osm2pgsql
+
     # Clear temporary files and directories.
-    && rm -rf \
+RUN rm -rf \
         /tmp/* \
         /var/tmp/* \
         /root/.cache \
@@ -123,15 +146,10 @@ RUN true \
 # Apache configuration
 COPY conf.d/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
-# Postgres config overrides to improve import performance (but reduce crash recovery safety)
-COPY conf.d/postgres-import.conf /etc/postgresql/14/main/conf.d/postgres-import.conf.disabled
-COPY conf.d/postgres-tuning.conf /etc/postgresql/14/main/conf.d/
-
 COPY config.sh /app/config.sh
 COPY init.sh /app/init.sh
 COPY start.sh /app/start.sh
 COPY startapache.sh /app/startapache.sh
-COPY startpostgres.sh /app/startpostgres.sh
 
 # Collapse image to single layer.
 FROM scratch
@@ -152,5 +170,6 @@ EXPOSE 5432
 EXPOSE 8080
 
 COPY conf.d/env $PROJECT_DIR/.env
+RUN chmod 755 /nominatim -R
 
 CMD ["/app/start.sh"]

@@ -35,7 +35,12 @@ import formatDuration from 'utils/date_time'
 import './Map.css'
 const OSMTiles = L.tileLayer(process.env.REACT_APP_TILE_SERVER_URL, {
   attribution:
-    '<a href="https://map.project-osrm.org/about.html" target="_blank">About this service and privacy policy</a> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+})
+
+const PNOATiles = L.tileLayer(process.env.REACT_APP_TILE_SERVER_PNOA_URL, {
+  attribution:
+    'Obra derivada de FotoPNOA 2004-2023 CC-BY 4.0 <a href="https://www.scne.es">scne.es</a>',
 })
 
 const convertDDToDMS = (decimalDegrees) =>
@@ -102,6 +107,7 @@ const mapParams = {
     highlightRouteIndexLayer,
     excludePolygonsLayer,
     OSMTiles,
+    PNOATiles,
   ],
 }
 
@@ -152,6 +158,7 @@ class Map extends React.Component {
     // our basemap and add it to the map
     const baseMaps = {
       OpenStreetMap: OSMTiles,
+      'Fotografía aérea PNOA': PNOATiles,
     }
 
     const overlayMaps = {

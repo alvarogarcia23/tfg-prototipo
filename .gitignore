@@ -1,0 +1,24 @@
+# Ignore PostgreSQL container data
+postgis/storage-15/*
+postgis/storage-16/*
+
+# Ignore OSM data
+shared/osm/*
+
+#Ignore bind mounts contents by default
+mapserver/bind-mounts/logs/*.log
+mapserver/bind-mounts/logs/*/*.log
+mapserver/bind-mounts/mapcache/cache/*/*.db
+mapserver/bind-mounts/mapcache/*.db*
+!mapserver/bind-mounts/mapcache/*.xml*
+mapserver/bind-mounts/logs/*
+nominatim/bind-mounts/*
+valhalla/bind-mounts/*
+
+#Ignore imposm cache contents
+imposm3-cache/*
+
+# Never ignore any git dotfiles
+!.gitignore
+!.gitsubmodules
+!.gitkeep

@@ -1,0 +1,135 @@
+networks:
+  default:
+    driver: bridge
+
+services:
+  mapserver:
+    container_name: mapserver
+    image: inf.uva.es/agarcia/tfg_mapserver:v1
+    build:
+      context: ./mapserver/
+      dockerfile: Dockerfile
+      target: devel
+    user: "${UID:-0}:${GID:-0}"
+    #user: "www-data:www-data"
+    volumes:
+      - ./mapserver/bind-mounts/maps/:/maps/
+      - ./mapserver/bind-mounts/logs/:/var/log/
+      - ./mapserver/bind-mounts/mapcache/:/mapcache/
+      - ./mapserver/bind-mounts/serve-cgi-bin.conf:/etc/apache2/conf-available/serve-cgi-bin.conf
+      - ./mapserver/bind-mounts/fcgid.conf:/etc/apache2/mods-available/fcgid.conf
+      - ./mapserver/bind-mounts/apache2.conf:/etc/apache2/apache2.conf
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
+  postgis:
+    container_name: postgis
+    image: inf.uva.es/agarcia/tfg_postgis:16-3.4
+    #image: postgis/postgis:16-3.4
+    shm_size: 1g
+    build:
+      context: ./postgis/16-3.4/
+      dockerfile: Dockerfile
+      target: final
+    volumes:
+      - ./postgis/storage/:/postgresql-data/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - PGDATA=/postgresql-data/db
+    restart: unless-stopped
+    
+  postgis-alpine:
+    container_name: postgis-alpine
+    image: inf.uva.es/agarcia/tfg_postgis:16-3.4-alpine
+    #image: postgis/postgis:16-3.4-alpine
+    shm_size: 1g
+    build:
+      context: ./postgis/16-3.4/alpine/
+      dockerfile: Dockerfile
+    volumes:
+      - ./postgis/storage/:/postgresql-data/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - PGDATA=/postgresql-data/db
+    restart: unless-stopped
+
+  valhalla:
+    image: inf.uva.es/agarcia/tfg_valhalla:latest
+    container_name: valhalla
+    restart: unless-stopped
+    ports:
+      - 8002:8002
+    build:
+      context: ./valhalla/
+    #  args:
+    #    - VALHALLA_UID=1000
+    #    - VALHALLA_GID=1000
+    volumes:
+      - ./shared/osm/portugal-latest.osm.pbf:/custom_files/portugal-latest.osm.pbf
+      - ./shared/osm/spain-latest.osm.pbf:/custom_files/spain-latest.osm.pbf
+      - ./valhalla/bind-mounts/files/:/custom_files
+      # - ./gtfs_feeds:/gtfs_feeds  # only enable with build_transit=True
+    environment:
+      # Auto-download PBFs from Geofabrik
+      # - tile_urls=https://download.geofabrik.de/europe/andorra-latest.osm.pbf https://download.geofabrik.de/europe/albania-latest.osm.pbf
+      - server_threads=4  # determines how many threads will be used to run the valhalla server
+      # Tile generation: 1 thread -> 40 min; 8 thread -> 20 min
+      - serve_tiles=True  # If True, starts the service. If false, stops after building the graph.
+      - tileset_name=valhalla_tiles  # name of the resulting graph on disk
+      - build_transit=False  # build transit, needs existing GTFS directories mapped to /gtfs_feeds
+      # - path_extension=graphs  # this path will be internally appended to /custom_files; no leading or trailing path separator!
+      - use_tiles_ignore_pbf=True  # load existing valhalla_tiles.tar directly
+      - build_elevation=True  # build elevation with "True" or "Force": will download only the elevation for areas covered by the graph tiles
+      - build_admins=True  # build admins db with "True" or "Force"
+      - build_time_zones=True  # build timezone db with "True" or "Force"
+      - build_tar=True  # build an indexed tar file from the tile_dir for faster graph loading times
+      - force_rebuild=False  # forces a rebuild of the routing tiles with "True"
+    # adapt to the expected build time
+    # healthcheck: 
+    #   test: curl --fail -s http://localhost:8002/status || exit 1
+    #   interval: 1s
+    #   retries: 10
+    #   start_period: 2s
+    #   timeout: 1s
+    
+  nominatim:
+    container_name: nominatim
+    image: inf.uva.es/agarcia/tfg_nominatim:4.4
+    restart: unless-stopped
+    build: ./nominatim/4.4/
+    user: "${UID:-0}:${GID:-0}"
+    ports:
+        - "8080:8080"
+    environment:
+        # see https://github.com/mediagis/nominatim-docker/tree/master/4.2#configuration for more options
+        #PBF_URL: https://download.geofabrik.de/europe/spain-latest.osm.pbf
+        PBF_PATH: /nominatim/castilla-y-leon-latest.osm.pbf
+        REPLICATION_URL: https://download.geofabrik.de/europe/spain/castilla-y-leon-updates/
+        NOMINATIM_PASSWORD: qaIACxO6wMR3
+        NOMINATIM_DATABASE_DSN: pgsql:dbname=nominatim;host=postgis;user=nominatim;password=qaIACxO6wMR3
+        NOMINATIM_DATABASE_WEBUSER: nominatim_user
+        NOMINATIM_DEFAULT_LANGUAGE: es-ES
+        NOMINATIM_IMPORT_STYLE: extratags
+        # Options: admin, street, address, full, extratags
+        THREADS: 4
+        USER_AGENT: mediagis/nominatim-docker:4.3.2
+        FREEZE: false
+    volumes:
+        - ./nominatim/bind-mounts/tokenizer/:/nominatim/tokenizer/
+        - ./shared/osm/castilla-y-leon-latest.osm.pbf:/nominatim/castilla-y-leon-latest.osm.pbf
+    shm_size: 1gb
+
+  webapp:
+    image: inf.uva.es/agarcia/tfg_webapp:latest
+    container_name: webapp
+    restart: unless-stopped
+    build: ./webapp/
+    ports:
+      - 80:80

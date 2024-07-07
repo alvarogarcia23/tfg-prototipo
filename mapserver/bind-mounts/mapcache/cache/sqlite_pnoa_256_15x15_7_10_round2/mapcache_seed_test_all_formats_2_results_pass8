@@ -1,0 +1,203 @@
+START seed JPEG_85_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y630
+seeded 900 tiles (0 skipped), now at z10 x525 y615
+seeded 1350 tiles (0 skipped), now at z10 x525 y645
+seeded 2475 tiles (0 skipped), now at z10 x480 y645
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_JPEG_85_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 3150 tiles (0 skipped), now at z10 x510 y630
+seeded 3375 tiles (0 skipped), now at z10 x495 y615
+seeded 3825 tiles (0 skipped), now at z9 x240 y315
+seeded 4725 tiles (0 skipped), now at z10 x495 y630
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 11.8 seconds at 400.1 tiles/sec (400.1 non-empty tiles/sec)
+START seed JPEG_95_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 1350 tiles (0 skipped), now at z9 x255 y300
+seeded 1800 tiles (0 skipped), now at z10 x525 y615
+seeded 2250 tiles (0 skipped), now at z10 x525 y645
+seeded 2475 tiles (0 skipped), now at z10 x510 y615
+seeded 2925 tiles (0 skipped), now at z10 x510 y630
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_JPEG_95_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 3600 tiles (0 skipped), now at z10 x480 y645
+seeded 4050 tiles (0 skipped), now at z10 x480 y630
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 10.2 seconds at 461.1 tiles/sec (461.1 non-empty tiles/sec)
+START seed PNGQ_BEST (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x480 y600
+seeded 900 tiles (0 skipped), now at z7 x60 y75
+seeded 1125 tiles (0 skipped), now at z10 x480 y615
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_PNGQ_BEST returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 1350 tiles (0 skipped), now at z10 x510 y630
+seeded 2025 tiles (0 skipped), now at z9 x255 y315
+seeded 2250 tiles (0 skipped), now at z10 x480 y630
+seeded 2475 tiles (0 skipped), now at z9 x240 y300
+seeded 2700 tiles (0 skipped), now at z9 x255 y300
+seeded 2925 tiles (0 skipped), now at z9 x240 y315
+seeded 3150 tiles (0 skipped), now at z10 x495 y615
+seeded 3375 tiles (0 skipped), now at z10 x495 y645
+seeded 3600 tiles (0 skipped), now at z10 x495 y630
+seeded 3825 tiles (0 skipped), now at z10 x510 y615
+seeded 4275 tiles (0 skipped), now at z10 x510 y645
+seeded 4725 tiles (0 skipped), now at z10 x480 y645
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 31.0 seconds at 152.5 tiles/sec (152.5 non-empty tiles/sec)
+START seed PNGQ_FAST (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x510 y600
+seeded 1125 tiles (0 skipped), now at z7 x60 y75
+seeded 1350 tiles (0 skipped), now at z9 x255 y300
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_PNGQ_FAST returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 1575 tiles (0 skipped), now at z9 x240 y300
+seeded 1800 tiles (0 skipped), now at z9 x255 y315
+seeded 2475 tiles (0 skipped), now at z10 x480 y645
+seeded 2700 tiles (0 skipped), now at z10 x510 y630
+seeded 2925 tiles (0 skipped), now at z10 x495 y615
+seeded 3150 tiles (0 skipped), now at z9 x240 y315
+seeded 3375 tiles (0 skipped), now at z10 x495 y630
+seeded 3600 tiles (0 skipped), now at z10 x495 y645
+seeded 4050 tiles (0 skipped), now at z10 x480 y630
+seeded 4275 tiles (0 skipped), now at z10 x510 y645
+seeded 4500 tiles (0 skipped), now at z10 x510 y615
+seeded 4725 tiles (0 skipped), now at z10 x480 y615
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 29.0 seconds at 163.2 tiles/sec (163.2 non-empty tiles/sec)
+START seed JPEG_BEST_OPTIM_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 900 tiles (0 skipped), now at z10 x525 y630
+seeded 1350 tiles (0 skipped), now at z9 x255 y300
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_JPEG_BEST_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 2250 tiles (0 skipped), now at z7 x60 y75
+seeded 2475 tiles (0 skipped), now at z10 x510 y630
+seeded 3150 tiles (0 skipped), now at z10 x525 y645
+seeded 4050 tiles (0 skipped), now at z10 x510 y645
+seeded 4500 tiles (0 skipped), now at z9 x240 y315
+seeded 4725 tiles (0 skipped), now at z10 x495 y630
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 11.8 seconds at 399.3 tiles/sec (399.3 non-empty tiles/sec)
+START seed JPEG_BEST_NOOPT_YCBCR (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 1350 tiles (0 skipped), now at z10 x525 y615
+seeded 2250 tiles (0 skipped), now at z9 x240 y300
+seeded 2475 tiles (0 skipped), now at z10 x510 y630
+seeded 2925 tiles (0 skipped), now at z10 x525 y645
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_JPEG_BEST_NOOPT_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 3375 tiles (0 skipped), now at z10 x510 y615
+seeded 3600 tiles (0 skipped), now at z10 x510 y645
+seeded 4725 tiles (0 skipped), now at z10 x495 y630
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 10.7 seconds at 440.5 tiles/sec (440.5 non-empty tiles/sec)
+START seed PNG_BEST (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 675 tiles (0 skipped), now at z7 x60 y75
+seeded 1350 tiles (0 skipped), now at z9 x240 y300
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_PNG_BEST returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 1800 tiles (0 skipped), now at z10 x510 y630
+seeded 2250 tiles (0 skipped), now at z10 x525 y630
+seeded 2700 tiles (0 skipped), now at z10 x480 y630
+seeded 3150 tiles (0 skipped), now at z10 x510 y645
+seeded 3600 tiles (0 skipped), now at z10 x495 y645
+seeded 4050 tiles (0 skipped), now at z10 x495 y615
+seeded 4275 tiles (0 skipped), now at z10 x495 y630
+seeded 4500 tiles (0 skipped), now at z9 x240 y315
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 17.3 seconds at 273.7 tiles/sec (273.7 non-empty tiles/sec)
+START seed PNG_FAST (zoom 7-10, tile 256x256, metatile 15x15, threads 100, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x495 y600
+seeded 1350 tiles (0 skipped), now at z9 x255 y300
+failed to seed tile z8,x120,y150:
+wms request for tileset pnoa_photo_PNG_FAST returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_peninsula&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 2463: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 2025 tiles (0 skipped), now at z10 x525 y630
+seeded 2475 tiles (0 skipped), now at z10 x480 y645
+seeded 3150 tiles (0 skipped), now at z10 x480 y630
+seeded 3600 tiles (0 skipped), now at z10 x510 y630
+seeded 4050 tiles (0 skipped), now at z10 x495 y645
+seeded 4500 tiles (0 skipped), now at z10 x495 y615
+seeded 4725 tiles (0 skipped), now at z10 x495 y630
+
+seeded 21 metatiles (4725 total tiles, 4725 non-empty tiles) in 12.8 seconds at 370.6 tiles/sec (370.6 non-empty tiles/sec)

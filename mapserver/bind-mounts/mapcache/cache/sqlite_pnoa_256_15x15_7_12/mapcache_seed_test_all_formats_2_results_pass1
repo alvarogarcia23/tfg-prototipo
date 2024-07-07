@@ -1,0 +1,445 @@
+START seed PNG_FAST (zoom 7-12, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x480 y600
+seeded 900 tiles (0 skipped), now at z10 x525 y600
+seeded 1125 tiles (0 skipped), now at z10 x525 y630
+seeded 1575 tiles (0 skipped), now at z10 x510 y630
+seeded 2025 tiles (0 skipped), now at z9 x255 y300
+seeded 2700 tiles (0 skipped), now at z10 x525 y645
+seeded 3375 tiles (0 skipped), now at z10 x495 y645
+seeded 4050 tiles (0 skipped), now at z11 x960 y1215
+seeded 4950 tiles (0 skipped), now at z9 x240 y300
+seeded 5400 tiles (0 skipped), now at z10 x480 y630
+seeded 6075 tiles (0 skipped), now at z11 x1005 y1215
+seeded 6300 tiles (0 skipped), now at z10 x495 y630
+seeded 6750 tiles (0 skipped), now at z11 x1020 y1245
+seeded 7200 tiles (0 skipped), now at z11 x1005 y1230
+seeded 7650 tiles (0 skipped), now at z11 x1005 y1245
+seeded 8100 tiles (0 skipped), now at z11 x1035 y1230
+seeded 9225 tiles (0 skipped), now at z11 x960 y1230
+seeded 9675 tiles (0 skipped), now at z11 x975 y1245
+seeded 10125 tiles (0 skipped), now at z11 x990 y1245
+seeded 10575 tiles (0 skipped), now at z11 x990 y1260
+seeded 11025 tiles (0 skipped), now at z11 x975 y1260
+seeded 11700 tiles (0 skipped), now at z11 x1005 y1260
+seeded 12150 tiles (0 skipped), now at z11 x1020 y1275
+seeded 12825 tiles (0 skipped), now at z11 x1020 y1290
+seeded 13275 tiles (0 skipped), now at z11 x990 y1275
+seeded 13725 tiles (0 skipped), now at z11 x1005 y1275
+seeded 14625 tiles (0 skipped), now at z11 x975 y1290
+seeded 15525 tiles (0 skipped), now at z11 x1035 y1290
+seeded 16200 tiles (0 skipped), now at z12 x2070 y2445
+seeded 17775 tiles (0 skipped), now at z11 x1035 y1305
+seeded 18000 tiles (0 skipped), now at z11 x975 y1275
+seeded 19125 tiles (0 skipped), now at z11 x960 y1260
+seeded 19350 tiles (0 skipped), now at z9 x240 y315
+seeded 20475 tiles (0 skipped), now at z12 x2010 y2460
+seeded 21150 tiles (0 skipped), now at z12 x1995 y2475
+seeded 21600 tiles (0 skipped), now at z12 x2055 y2460
+seeded 22275 tiles (0 skipped), now at z12 x1935 y2445
+seeded 23175 tiles (0 skipped), now at z12 x2040 y2475
+seeded 23850 tiles (0 skipped), now at z12 x1920 y2475
+seeded 24525 tiles (0 skipped), now at z12 x2055 y2475
+seeded 25425 tiles (0 skipped), now at z12 x2070 y2460
+seeded 25875 tiles (0 skipped), now at z12 x1980 y2490
+seeded 26775 tiles (0 skipped), now at z12 x2070 y2475
+seeded 27450 tiles (0 skipped), now at z12 x2040 y2505
+seeded 28800 tiles (0 skipped), now at z12 x2070 y2490
+seeded 29475 tiles (0 skipped), now at z12 x1980 y2505
+seeded 29700 tiles (0 skipped), now at z12 x1995 y2505
+seeded 29925 tiles (0 skipped), now at z12 x2025 y2505
+seeded 30150 tiles (0 skipped), now at z12 x2010 y2505
+seeded 30600 tiles (0 skipped), now at z12 x1965 y2505
+seeded 31050 tiles (0 skipped), now at z12 x1950 y2505
+seeded 31275 tiles (0 skipped), now at z12 x1980 y2520
+seeded 31725 tiles (0 skipped), now at z12 x2010 y2520
+seeded 31950 tiles (0 skipped), now at z12 x1965 y2520
+seeded 32400 tiles (0 skipped), now at z12 x1995 y2520
+seeded 33075 tiles (0 skipped), now at z12 x1950 y2535
+seeded 33300 tiles (0 skipped), now at z12 x1995 y2535
+seeded 33525 tiles (0 skipped), now at z12 x2025 y2535
+seeded 33975 tiles (0 skipped), now at z12 x1965 y2535
+seeded 34200 tiles (0 skipped), now at z12 x2010 y2535
+seeded 34875 tiles (0 skipped), now at z12 x1935 y2535
+seeded 35775 tiles (0 skipped), now at z12 x2100 y2535
+seeded 36000 tiles (0 skipped), now at z12 x1980 y2535
+failed to seed tile z12,x1995,y2550:
+wms request for tileset pnoa_photo_PNG_FAST returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_global&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 1507: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 36450 tiles (0 skipped), now at z12 x1980 y2550
+seeded 37575 tiles (0 skipped), now at z12 x2055 y2550
+seeded 38250 tiles (0 skipped), now at z12 x1965 y2550
+seeded 38475 tiles (0 skipped), now at z12 x2025 y2550
+seeded 38700 tiles (0 skipped), now at z12 x2025 y2520
+seeded 38925 tiles (0 skipped), now at z12 x1950 y2520
+seeded 39150 tiles (0 skipped), now at z12 x2040 y2550
+seeded 39375 tiles (0 skipped), now at z12 x2010 y2550
+seeded 39600 tiles (0 skipped), now at z12 x2010 y2565
+seeded 39825 tiles (0 skipped), now at z12 x2025 y2565
+seeded 40050 tiles (0 skipped), now at z12 x2040 y2565
+seeded 40275 tiles (0 skipped), now at z12 x1995 y2565
+seeded 40500 tiles (0 skipped), now at z12 x2055 y2565
+seeded 40725 tiles (0 skipped), now at z12 x1950 y2565
+seeded 40950 tiles (0 skipped), now at z12 x1980 y2565
+seeded 41400 tiles (0 skipped), now at z12 x1995 y2580
+seeded 42075 tiles (0 skipped), now at z12 x2040 y2580
+seeded 42750 tiles (0 skipped), now at z12 x1950 y2580
+seeded 43200 tiles (0 skipped), now at z12 x2070 y2580
+seeded 43425 tiles (0 skipped), now at z12 x1965 y2580
+seeded 43875 tiles (0 skipped), now at z12 x1965 y2595
+seeded 44100 tiles (0 skipped), now at z12 x1980 y2580
+seeded 44775 tiles (0 skipped), now at z12 x2010 y2580
+seeded 45675 tiles (0 skipped), now at z12 x1935 y2580
+seeded 46125 tiles (0 skipped), now at z12 x2055 y2580
+seeded 47025 tiles (0 skipped), now at z12 x1965 y2565
+seeded 47250 tiles (0 skipped), now at z12 x1950 y2550
+seeded 47475 tiles (0 skipped), now at z12 x2025 y2580
+seeded 48150 tiles (0 skipped), now at z12 x2070 y2595
+seeded 48825 tiles (0 skipped), now at z12 x2040 y2595
+seeded 49500 tiles (0 skipped), now at z12 x2025 y2595
+seeded 50400 tiles (0 skipped), now at z12 x1995 y2610
+seeded 50850 tiles (0 skipped), now at z12 x2055 y2595
+
+seeded 226 metatiles (50850 total tiles, 50850 non-empty tiles) in 135.1 seconds at 376.4 tiles/sec (376.4 non-empty tiles/sec)
+START seed JPEG_50_OPTIM_YCBCR (zoom 7-12, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x525 y600
+seeded 900 tiles (0 skipped), now at z10 x510 y630
+seeded 1125 tiles (0 skipped), now at z10 x480 y615
+seeded 1575 tiles (0 skipped), now at z9 x255 y315
+seeded 1800 tiles (0 skipped), now at z10 x480 y600
+seeded 2475 tiles (0 skipped), now at z9 x255 y300
+seeded 3825 tiles (0 skipped), now at z10 x480 y630
+seeded 5625 tiles (0 skipped), now at z11 x1005 y1215
+seeded 6300 tiles (0 skipped), now at z11 x990 y1230
+seeded 7425 tiles (0 skipped), now at z10 x480 y645
+seeded 8100 tiles (0 skipped), now at z11 x1035 y1245
+seeded 8775 tiles (0 skipped), now at z10 x495 y615
+seeded 9675 tiles (0 skipped), now at z11 x1020 y1260
+seeded 9900 tiles (0 skipped), now at z11 x1050 y1230
+seeded 10575 tiles (0 skipped), now at z11 x975 y1275
+seeded 11025 tiles (0 skipped), now at z11 x1050 y1275
+seeded 12150 tiles (0 skipped), now at z11 x960 y1305
+seeded 13275 tiles (0 skipped), now at z11 x1005 y1305
+seeded 13950 tiles (0 skipped), now at z12 x1935 y2445
+seeded 14625 tiles (0 skipped), now at z11 x990 y1275
+seeded 15750 tiles (0 skipped), now at z12 x2040 y2445
+seeded 16425 tiles (0 skipped), now at z12 x2100 y2445
+seeded 17550 tiles (0 skipped), now at z11 x975 y1305
+seeded 18675 tiles (0 skipped), now at z11 x990 y1245
+seeded 20025 tiles (0 skipped), now at z11 x990 y1260
+seeded 20925 tiles (0 skipped), now at z12 x1950 y2475
+seeded 22500 tiles (0 skipped), now at z12 x1920 y2475
+seeded 23625 tiles (0 skipped), now at z12 x1950 y2490
+seeded 24075 tiles (0 skipped), now at z12 x2085 y2490
+seeded 24525 tiles (0 skipped), now at z12 x2070 y2475
+seeded 25875 tiles (0 skipped), now at z12 x1920 y2505
+seeded 27450 tiles (0 skipped), now at z12 x2010 y2490
+seeded 28350 tiles (0 skipped), now at z12 x1920 y2520
+seeded 28800 tiles (0 skipped), now at z12 x1950 y2505
+seeded 29250 tiles (0 skipped), now at z12 x1995 y2505
+seeded 29475 tiles (0 skipped), now at z12 x2055 y2520
+seeded 29700 tiles (0 skipped), now at z12 x2070 y2520
+seeded 29925 tiles (0 skipped), now at z12 x2085 y2520
+seeded 30825 tiles (0 skipped), now at z12 x2040 y2520
+seeded 31950 tiles (0 skipped), now at z12 x2010 y2520
+seeded 32400 tiles (0 skipped), now at z12 x2025 y2505
+seeded 33300 tiles (0 skipped), now at z12 x2070 y2505
+seeded 33975 tiles (0 skipped), now at z12 x2070 y2490
+seeded 34425 tiles (0 skipped), now at z12 x2040 y2535
+seeded 35100 tiles (0 skipped), now at z12 x2025 y2535
+seeded 35325 tiles (0 skipped), now at z12 x1950 y2535
+seeded 35550 tiles (0 skipped), now at z12 x1965 y2550
+failed to seed tile z12,x1995,y2550:
+wms request for tileset pnoa_photo_JPEG_50_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_global&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 1507: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 36000 tiles (0 skipped), now at z12 x2085 y2550
+seeded 36675 tiles (0 skipped), now at z12 x2055 y2550
+seeded 37350 tiles (0 skipped), now at z12 x2070 y2535
+seeded 38475 tiles (0 skipped), now at z12 x2025 y2520
+seeded 39600 tiles (0 skipped), now at z12 x1995 y2520
+seeded 40050 tiles (0 skipped), now at z12 x1950 y2565
+seeded 40275 tiles (0 skipped), now at z12 x1965 y2565
+seeded 40500 tiles (0 skipped), now at z12 x2040 y2565
+seeded 40950 tiles (0 skipped), now at z12 x1995 y2565
+seeded 41850 tiles (0 skipped), now at z12 x1995 y2580
+seeded 42075 tiles (0 skipped), now at z12 x2100 y2580
+seeded 43425 tiles (0 skipped), now at z12 x1920 y2595
+seeded 44100 tiles (0 skipped), now at z12 x1980 y2580
+seeded 44775 tiles (0 skipped), now at z12 x1950 y2595
+seeded 45675 tiles (0 skipped), now at z12 x1920 y2610
+seeded 46125 tiles (0 skipped), now at z12 x2040 y2595
+seeded 47475 tiles (0 skipped), now at z12 x1995 y2610
+seeded 49050 tiles (0 skipped), now at z12 x2100 y2610
+seeded 50625 tiles (0 skipped), now at z12 x2055 y2565
+seeded 50850 tiles (0 skipped), now at z12 x2085 y2595
+
+seeded 226 metatiles (50850 total tiles, 50850 non-empty tiles) in 98.2 seconds at 517.8 tiles/sec (517.8 non-empty tiles/sec)
+START seed JPEG_80_OPTIM_YCBCR (zoom 7-12, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x510 y600
+seeded 675 tiles (0 skipped), now at z10 x525 y630
+seeded 1575 tiles (0 skipped), now at z8 x120 y150
+seeded 2025 tiles (0 skipped), now at z10 x480 y645
+seeded 2925 tiles (0 skipped), now at z9 x240 y300
+seeded 3825 tiles (0 skipped), now at z11 x1005 y1215
+seeded 4500 tiles (0 skipped), now at z11 x990 y1215
+seeded 5400 tiles (0 skipped), now at z11 x975 y1230
+seeded 6300 tiles (0 skipped), now at z10 x495 y615
+seeded 7425 tiles (0 skipped), now at z11 x1005 y1230
+seeded 8325 tiles (0 skipped), now at z11 x1050 y1245
+seeded 8775 tiles (0 skipped), now at z11 x960 y1245
+seeded 9000 tiles (0 skipped), now at z11 x1020 y1260
+seeded 9225 tiles (0 skipped), now at z11 x1005 y1245
+seeded 9900 tiles (0 skipped), now at z11 x1050 y1275
+seeded 10350 tiles (0 skipped), now at z11 x960 y1260
+seeded 10575 tiles (0 skipped), now at z11 x1020 y1275
+seeded 11475 tiles (0 skipped), now at z11 x1050 y1260
+seeded 12825 tiles (0 skipped), now at z11 x990 y1305
+seeded 13725 tiles (0 skipped), now at z12 x1920 y2445
+seeded 15075 tiles (0 skipped), now at z12 x1980 y2445
+seeded 16650 tiles (0 skipped), now at z11 x1005 y1290
+seeded 18675 tiles (0 skipped), now at z12 x1920 y2460
+seeded 19800 tiles (0 skipped), now at z12 x1935 y2475
+seeded 20925 tiles (0 skipped), now at z12 x2010 y2475
+seeded 22050 tiles (0 skipped), now at z12 x2025 y2460
+seeded 23400 tiles (0 skipped), now at z12 x1950 y2475
+seeded 23850 tiles (0 skipped), now at z12 x2040 y2490
+seeded 24750 tiles (0 skipped), now at z12 x2040 y2475
+seeded 26100 tiles (0 skipped), now at z12 x2055 y2475
+seeded 26325 tiles (0 skipped), now at z12 x1980 y2490
+seeded 26775 tiles (0 skipped), now at z12 x2085 y2490
+seeded 27225 tiles (0 skipped), now at z12 x2070 y2490
+seeded 27900 tiles (0 skipped), now at z12 x2100 y2505
+seeded 28800 tiles (0 skipped), now at z12 x1965 y2505
+seeded 29700 tiles (0 skipped), now at z12 x2070 y2505
+seeded 30825 tiles (0 skipped), now at z12 x1995 y2505
+seeded 31950 tiles (0 skipped), now at z12 x2070 y2520
+seeded 32625 tiles (0 skipped), now at z12 x1995 y2520
+seeded 32850 tiles (0 skipped), now at z12 x2025 y2520
+seeded 33525 tiles (0 skipped), now at z12 x2070 y2535
+seeded 34425 tiles (0 skipped), now at z12 x1920 y2550
+seeded 35100 tiles (0 skipped), now at z12 x1980 y2520
+seeded 35550 tiles (0 skipped), now at z12 x2025 y2535
+seeded 36000 tiles (0 skipped), now at z12 x1950 y2520
+seeded 36675 tiles (0 skipped), now at z12 x2100 y2550
+seeded 37350 tiles (0 skipped), now at z12 x2100 y2535
+seeded 37800 tiles (0 skipped), now at z12 x2025 y2550
+seeded 38700 tiles (0 skipped), now at z12 x2070 y2550
+seeded 39150 tiles (0 skipped), now at z12 x2085 y2550
+seeded 39600 tiles (0 skipped), now at z12 x2085 y2565
+seeded 40275 tiles (0 skipped), now at z12 x1965 y2565
+seeded 41400 tiles (0 skipped), now at z12 x2070 y2565
+seeded 41625 tiles (0 skipped), now at z12 x2025 y2565
+seeded 42750 tiles (0 skipped), now at z12 x2100 y2580
+seeded 43200 tiles (0 skipped), now at z12 x1950 y2595
+seeded 43875 tiles (0 skipped), now at z12 x2085 y2580
+seeded 45000 tiles (0 skipped), now at z12 x1920 y2595
+seeded 45450 tiles (0 skipped), now at z12 x1920 y2610
+failed to seed tile z12,x1995,y2550:
+wms request for tileset pnoa_photo_JPEG_80_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_global&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 1507: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 46350 tiles (0 skipped), now at z12 x1950 y2580
+seeded 47700 tiles (0 skipped), now at z12 x2010 y2580
+seeded 49050 tiles (0 skipped), now at z12 x2085 y2610
+seeded 49725 tiles (0 skipped), now at z12 x2100 y2610
+seeded 50400 tiles (0 skipped), now at z12 x2040 y2595
+seeded 50850 tiles (0 skipped), now at z12 x2025 y2580
+
+seeded 226 metatiles (50850 total tiles, 50850 non-empty tiles) in 97.6 seconds at 521.2 tiles/sec (521.2 non-empty tiles/sec)
+START seed JPEG_95_OPTIM_YCBCR (zoom 7-12, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x510 y600
+seeded 450 tiles (0 skipped), now at z10 x525 y615
+seeded 900 tiles (0 skipped), now at z10 x510 y630
+seeded 2025 tiles (0 skipped), now at z9 x255 y315
+seeded 3150 tiles (0 skipped), now at z8 x120 y150
+seeded 3825 tiles (0 skipped), now at z11 x990 y1215
+seeded 4950 tiles (0 skipped), now at z10 x510 y645
+seeded 6075 tiles (0 skipped), now at z10 x495 y615
+seeded 7200 tiles (0 skipped), now at z10 x480 y630
+seeded 8100 tiles (0 skipped), now at z11 x1020 y1245
+seeded 8775 tiles (0 skipped), now at z11 x1005 y1245
+seeded 9450 tiles (0 skipped), now at z11 x1035 y1260
+seeded 9900 tiles (0 skipped), now at z11 x960 y1290
+seeded 10350 tiles (0 skipped), now at z11 x1035 y1275
+seeded 10800 tiles (0 skipped), now at z11 x1050 y1275
+seeded 11250 tiles (0 skipped), now at z11 x975 y1245
+seeded 11925 tiles (0 skipped), now at z11 x960 y1305
+seeded 12375 tiles (0 skipped), now at z11 x990 y1245
+seeded 13500 tiles (0 skipped), now at z11 x1050 y1260
+seeded 14625 tiles (0 skipped), now at z11 x990 y1290
+seeded 16200 tiles (0 skipped), now at z11 x990 y1275
+seeded 18000 tiles (0 skipped), now at z12 x2100 y2445
+seeded 19575 tiles (0 skipped), now at z12 x1965 y2460
+seeded 20025 tiles (0 skipped), now at z12 x1920 y2475
+seeded 20925 tiles (0 skipped), now at z12 x1965 y2475
+seeded 22050 tiles (0 skipped), now at z12 x1980 y2460
+seeded 22950 tiles (0 skipped), now at z12 x2100 y2475
+seeded 23625 tiles (0 skipped), now at z12 x2010 y2475
+seeded 24075 tiles (0 skipped), now at z12 x1950 y2490
+seeded 24750 tiles (0 skipped), now at z12 x2025 y2490
+seeded 25425 tiles (0 skipped), now at z12 x1920 y2505
+seeded 26550 tiles (0 skipped), now at z12 x2085 y2475
+seeded 27450 tiles (0 skipped), now at z12 x2070 y2505
+seeded 28125 tiles (0 skipped), now at z12 x2100 y2505
+seeded 28800 tiles (0 skipped), now at z12 x2055 y2505
+seeded 29250 tiles (0 skipped), now at z12 x2040 y2505
+seeded 29475 tiles (0 skipped), now at z12 x1965 y2505
+seeded 29925 tiles (0 skipped), now at z12 x2055 y2520
+seeded 30825 tiles (0 skipped), now at z12 x2085 y2520
+seeded 31500 tiles (0 skipped), now at z12 x2025 y2505
+seeded 32400 tiles (0 skipped), now at z12 x1995 y2520
+seeded 32850 tiles (0 skipped), now at z12 x2055 y2535
+seeded 33075 tiles (0 skipped), now at z12 x1965 y2520
+seeded 33750 tiles (0 skipped), now at z12 x2070 y2535
+seeded 34200 tiles (0 skipped), now at z12 x1965 y2535
+seeded 34425 tiles (0 skipped), now at z12 x1995 y2535
+seeded 34875 tiles (0 skipped), now at z12 x1980 y2520
+seeded 35100 tiles (0 skipped), now at z12 x2085 y2535
+seeded 35325 tiles (0 skipped), now at z12 x1965 y2550
+seeded 35775 tiles (0 skipped), now at z12 x1935 y2550
+seeded 36450 tiles (0 skipped), now at z12 x2010 y2520
+failed to seed tile z12,x1995,y2550:
+wms request for tileset pnoa_photo_JPEG_95_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_global&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 1507: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 38025 tiles (0 skipped), now at z12 x2055 y2550
+seeded 38700 tiles (0 skipped), now at z12 x2025 y2520
+seeded 39375 tiles (0 skipped), now at z12 x2100 y2565
+seeded 39825 tiles (0 skipped), now at z12 x2085 y2565
+seeded 40050 tiles (0 skipped), now at z12 x1995 y2565
+seeded 40500 tiles (0 skipped), now at z12 x2010 y2565
+seeded 41175 tiles (0 skipped), now at z12 x1950 y2565
+seeded 41400 tiles (0 skipped), now at z12 x2025 y2565
+seeded 41625 tiles (0 skipped), now at z12 x1980 y2580
+seeded 42300 tiles (0 skipped), now at z12 x2100 y2580
+seeded 42975 tiles (0 skipped), now at z12 x2055 y2580
+seeded 43425 tiles (0 skipped), now at z12 x1935 y2595
+seeded 44550 tiles (0 skipped), now at z12 x1920 y2595
+seeded 45450 tiles (0 skipped), now at z12 x1920 y2610
+seeded 46350 tiles (0 skipped), now at z12 x1950 y2550
+seeded 47250 tiles (0 skipped), now at z12 x1950 y2610
+seeded 48600 tiles (0 skipped), now at z12 x2085 y2610
+seeded 49500 tiles (0 skipped), now at z12 x1995 y2610
+seeded 50625 tiles (0 skipped), now at z12 x2025 y2595
+seeded 50850 tiles (0 skipped), now at z12 x2010 y2580
+
+seeded 226 metatiles (50850 total tiles, 50850 non-empty tiles) in 98.4 seconds at 516.9 tiles/sec (516.9 non-empty tiles/sec)
+START seed JPEG_BEST_OPTIM_YCBCR (zoom 7-12, tile 256x256, metatile 15x15, threads 16, extents continental Spain)
+seeded 225 tiles (0 skipped), now at z10 x480 y600
+seeded 900 tiles (0 skipped), now at z9 x240 y300
+seeded 1350 tiles (0 skipped), now at z10 x480 y645
+seeded 1575 tiles (0 skipped), now at z10 x495 y615
+seeded 2250 tiles (0 skipped), now at z10 x525 y630
+seeded 3150 tiles (0 skipped), now at z11 x960 y1215
+seeded 4050 tiles (0 skipped), now at z10 x495 y600
+seeded 5400 tiles (0 skipped), now at z7 x60 y75
+seeded 5850 tiles (0 skipped), now at z10 x495 y630
+seeded 6975 tiles (0 skipped), now at z10 x510 y645
+seeded 8100 tiles (0 skipped), now at z11 x1035 y1245
+seeded 9000 tiles (0 skipped), now at z11 x1020 y1230
+seeded 10125 tiles (0 skipped), now at z11 x975 y1245
+seeded 10350 tiles (0 skipped), now at z11 x1035 y1260
+seeded 10800 tiles (0 skipped), now at z11 x960 y1290
+seeded 11025 tiles (0 skipped), now at z11 x990 y1245
+seeded 11925 tiles (0 skipped), now at z11 x1020 y1275
+seeded 12375 tiles (0 skipped), now at z11 x975 y1275
+seeded 12825 tiles (0 skipped), now at z11 x1005 y1305
+seeded 13500 tiles (0 skipped), now at z11 x1035 y1290
+seeded 14850 tiles (0 skipped), now at z11 x1005 y1290
+seeded 15975 tiles (0 skipped), now at z11 x990 y1275
+seeded 17325 tiles (0 skipped), now at z12 x2055 y2445
+seeded 18900 tiles (0 skipped), now at z11 x990 y1260
+seeded 20025 tiles (0 skipped), now at z12 x2100 y2460
+seeded 20700 tiles (0 skipped), now at z12 x1950 y2475
+seeded 21150 tiles (0 skipped), now at z12 x2070 y2460
+seeded 22050 tiles (0 skipped), now at z12 x1980 y2475
+seeded 23400 tiles (0 skipped), now at z12 x1995 y2460
+seeded 24750 tiles (0 skipped), now at z12 x2025 y2490
+seeded 25425 tiles (0 skipped), now at z12 x1920 y2505
+seeded 26325 tiles (0 skipped), now at z12 x1935 y2505
+seeded 27000 tiles (0 skipped), now at z12 x2055 y2505
+seeded 27900 tiles (0 skipped), now at z12 x2070 y2505
+seeded 28800 tiles (0 skipped), now at z12 x2010 y2490
+seeded 29025 tiles (0 skipped), now at z12 x1965 y2505
+seeded 29250 tiles (0 skipped), now at z12 x1995 y2505
+seeded 29475 tiles (0 skipped), now at z12 x1935 y2520
+seeded 29700 tiles (0 skipped), now at z12 x1980 y2520
+seeded 30150 tiles (0 skipped), now at z12 x1980 y2505
+seeded 31050 tiles (0 skipped), now at z12 x1995 y2520
+seeded 31950 tiles (0 skipped), now at z12 x1950 y2520
+seeded 32850 tiles (0 skipped), now at z12 x1920 y2520
+seeded 33750 tiles (0 skipped), now at z12 x1920 y2550
+seeded 34425 tiles (0 skipped), now at z12 x1965 y2535
+seeded 34650 tiles (0 skipped), now at z12 x2040 y2535
+seeded 35100 tiles (0 skipped), now at z12 x2100 y2535
+seeded 35550 tiles (0 skipped), now at z12 x2025 y2535
+seeded 36000 tiles (0 skipped), now at z12 x1950 y2550
+seeded 36225 tiles (0 skipped), now at z12 x2055 y2550
+failed to seed tile z12,x1995,y2550:
+wms request for tileset pnoa_photo_JPEG_BEST_OPTIM_YCBCR returned an unsupported format:
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException>
+msDrawMap(): WMS connection error. Failed to draw WMS layer named &#39;pnoa_fondo_global&#39;. This most likely happened because the remote WMS server returned an invalid image, and XML exception or another unexpected result in response to the GetMap request. Also check and make sure that the layer&#39;s connection URL is valid.
+drawGDAL(): Unable to access file. GDALDatasetRasterIO() failed: Error while reading row 1507: libpng: Read Error
+</ServiceException>
+</ServiceExceptionReport>
+
+
+seeded 36675 tiles (0 skipped), now at z12 x2100 y2550
+seeded 37350 tiles (0 skipped), now at z12 x2100 y2520
+seeded 37800 tiles (0 skipped), now at z12 x2025 y2550
+seeded 38250 tiles (0 skipped), now at z12 x1995 y2535
+seeded 38925 tiles (0 skipped), now at z12 x2085 y2550
+seeded 39375 tiles (0 skipped), now at z12 x1995 y2565
+seeded 39600 tiles (0 skipped), now at z12 x1920 y2580
+seeded 39825 tiles (0 skipped), now at z12 x2025 y2565
+seeded 40725 tiles (0 skipped), now at z12 x2040 y2565
+seeded 40950 tiles (0 skipped), now at z12 x2010 y2565
+seeded 41625 tiles (0 skipped), now at z12 x1980 y2565
+seeded 42300 tiles (0 skipped), now at z12 x1980 y2580
+seeded 43200 tiles (0 skipped), now at z12 x1995 y2580
+seeded 43875 tiles (0 skipped), now at z12 x2025 y2580
+seeded 44775 tiles (0 skipped), now at z12 x2040 y2580
+seeded 45450 tiles (0 skipped), now at z12 x1935 y2580
+seeded 45900 tiles (0 skipped), now at z12 x1965 y2580
+seeded 47025 tiles (0 skipped), now at z12 x1935 y2610
+seeded 47925 tiles (0 skipped), now at z12 x2070 y2610
+seeded 49050 tiles (0 skipped), now at z12 x2070 y2595
+seeded 50175 tiles (0 skipped), now at z12 x2025 y2595
+
+seeded 226 metatiles (50850 total tiles, 50850 non-empty tiles) in 99.7 seconds at 510.2 tiles/sec (510.2 non-empty tiles/sec)
